@@ -2,33 +2,29 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: PhD Candidate · Computational Psychiatry · <a href="https://www.laureateinstitute.org/" target="_blank">Laureate Institute for Brain Research</a>
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Laureate Institute for Brain Research</p>
+    <p>Tulsa, Oklahoma</p>
+    <p>marishka.mehta@gmail.com</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a doctoral researcher in computational psychiatry at the [Laureate Institute for Brain Research](https://www.laureateinstitute.org/), working with [Dr. Ryan Smith](https://www.laureateinstitute.org/researchers/ryan-smith-ph-d). Drawing on computational theories of decision-making and motivation, my research uses Bayesian and reinforcement-learning models, behavioral paradigms, neuroimaging, and advanced statistical and machine learning approaches to characterize latent cognitive and psychological processes. The aim is to understand how individual differences in these processes contribute to psychiatric heterogeneity across depression, anxiety, and substance use disorders — and to translate that understanding into tools that support more precise assessment and prediction of symptom improvement.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My dissertation addresses planning behavior and interoception across psychiatric conditions. The planning work spans three projects: approach-avoidance conflict, multi-step planning under anxiety, and uncertainty resolution through model-based and model-free control. I have worked on complementary projects using 3T and 7T fMRI, spanning motivation, agency, outcome processing, and digital health. Across projects, I prioritize streamlined, reproducible workflows and scalable implementation.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Before starting my PhD, I completed my Master's thesis in the Morris Lab at Mount Sinai, where I subsequently worked as a Clinical Research Coordinator on 7T fMRI, motivation, and digital phenotyping. My research has been shaped by interdisciplinary and cross-cultural training across six institutions on three continents, including a dual Master's in Neuroscience through the [Neurasmus](https://neurasmus-master.eu/) program.
