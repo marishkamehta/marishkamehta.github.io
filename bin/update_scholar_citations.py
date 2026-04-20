@@ -52,7 +52,10 @@ def get_scholar_citations() -> None:
                 and "last_updated" in existing_data["metadata"]
             ):
                 print(f"Last updated on: {existing_data['metadata']['last_updated']}")
-                if existing_data["metadata"]["last_updated"] == today:
+                if (
+                    existing_data["metadata"]["last_updated"] == today
+                    and "summary" in existing_data["metadata"]
+                ):
                     print("Citations data is already up-to-date. Skipping fetch.")
                     return
         except Exception as e:
@@ -60,7 +63,7 @@ def get_scholar_citations() -> None:
                 f"Warning: Could not read existing citation data from {OUTPUT_FILE}: {e}. The file may be missing or corrupted."
             )
 
-    citation_data = {"metadata": {"last_updated": today}, "papers": {}}
+    citation_data = {"metadata": {"last_updated": today, "summary": {}}, "papers": {}}
 
     scholarly.set_timeout(15)
     scholarly.set_retries(3)
@@ -82,6 +85,17 @@ def get_scholar_citations() -> None:
     if "publications" not in author_data:
         print(f"No publications found in author data for user ID '{SCHOLAR_USER_ID}'.")
         sys.exit(1)
+
+    citation_data["metadata"]["summary"] = {
+        "total_citations": author_data.get("citedby", 0),
+        "h_index": author_data.get("hindex", 0),
+        "i10_index": author_data.get("i10index", 0),
+    }
+    print(
+        f"Summary — citations: {citation_data['metadata']['summary']['total_citations']}, "
+        f"h-index: {citation_data['metadata']['summary']['h_index']}, "
+        f"i10-index: {citation_data['metadata']['summary']['i10_index']}"
+    )
 
     for pub in author_data["publications"]:
         try:
@@ -109,7 +123,12 @@ def get_scholar_citations() -> None:
             )
 
     # Compare new data with existing data
-    if existing_data and existing_data.get("papers") == citation_data["papers"]:
+    if (
+        existing_data
+        and existing_data.get("papers") == citation_data["papers"]
+        and existing_data.get("metadata", {}).get("summary")
+        == citation_data["metadata"]["summary"]
+    ):
         print("No changes in citation data. Skipping file update.")
         return
 

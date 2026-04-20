@@ -4,6 +4,44 @@
 
 @use "variables" as v;
 
+.scholar-summary {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 2rem 0 2.5rem;
+  padding: 1.25rem 1.5rem;
+  border-top: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-divider-color);
+
+  .stat {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease;
+
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+      transform: translateY(-2px);
+    }
+
+    .value {
+      font-size: 1.75rem;
+      font-weight: 600;
+      line-height: 1.1;
+      color: var(--global-theme-color);
+    }
+
+    .label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 0.25rem;
+      color: var(--global-text-color-light);
+    }
+  }
+}
+
 .publications {
   margin-top: 2rem;
 
