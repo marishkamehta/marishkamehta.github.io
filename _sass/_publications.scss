@@ -6,44 +6,48 @@
 
 .scholar-summary {
   display: flex;
-  justify-content: center;
-  gap: 3rem;
-  margin: 2rem 0 2.5rem;
-  padding: 1.25rem 1.5rem;
-  border-top: 1px solid var(--global-divider-color);
-  border-bottom: 1px solid var(--global-divider-color);
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 1.25rem;
+  margin: 0.5rem 0 1rem;
 
   .stat {
-    text-align: center;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.4rem;
     text-decoration: none;
     color: inherit;
-    transition: transform 0.15s ease;
 
     &:hover {
       text-decoration: none;
-      color: inherit;
-      transform: translateY(-2px);
+      color: var(--global-theme-color);
+
+      .value { color: var(--global-theme-color); }
     }
 
     .value {
-      font-size: 1.75rem;
+      font-size: 1.15rem;
       font-weight: 600;
-      line-height: 1.1;
-      color: var(--global-theme-color);
+      color: var(--global-text-color);
     }
 
     .label {
-      font-size: 0.75rem;
+      font-size: 0.8rem;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-top: 0.25rem;
+      letter-spacing: 0.06em;
       color: var(--global-text-color-light);
+    }
+
+    & + .stat::before {
+      content: "·";
+      margin-right: 0.4rem;
+      color: var(--global-divider-color);
     }
   }
 }
 
 .publications {
-  margin-top: 2rem;
+  margin-top: 0;
 
   h1 {
     color: var(--global-theme-color);
@@ -65,7 +69,7 @@
     color: var(--global-divider-color);
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     text-align: right;
   }
 
@@ -78,7 +82,11 @@
       margin-bottom: 1rem;
 
       .preview {
-        display: inline-block;
+        display: block;
+        width: auto !important;
+        height: auto !important;
+        max-width: 110px;
+        max-height: 90px;
       }
 
       .abbr {
@@ -86,6 +94,15 @@
 
         abbr {
           display: inline-block;
+          width: auto !important;
+          max-width: 100%;
+          font-size: 0.65rem;
+          font-weight: 500;
+          letter-spacing: 0.03em;
+          padding: 0.15rem 0.45rem;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
           background-color: var(--global-theme-color);
           margin-bottom: 0.5rem;
           color: var(--global-card-bg-color) !important;

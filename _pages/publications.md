@@ -1,9 +1,10 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
+title: Publications
 nav: true
 nav_order: 2
+hide_title: true
 ---
 
 <!-- _pages/publications.md -->
@@ -31,12 +32,6 @@ nav_order: 2
 {% include bib_search.liquid %}
 
 <div class="publications">
-
-<h2>Preprints</h2>
-
-{% bibliography -q @*[preprint=true] %}
-
-<h2>Published</h2>
 
 {% bibliography -q @*[preprint!=true] %}
 

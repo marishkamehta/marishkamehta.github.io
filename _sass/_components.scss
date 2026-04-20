@@ -2,6 +2,28 @@
  * Reusable component styles: Cards, captions, profiles, etc.
  ******************************************************************************/
 
+// News / updates badges
+
+.news-badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: var(--global-theme-color);
+  white-space: nowrap;
+}
+
+.news-badge-preprint { background-color: #5b8def; }
+.news-badge-paper    { background-color: #2c7a7b; }
+.news-badge-poster   { background-color: #38a169; }
+.news-badge-talk     { background-color: #805ad5; }
+.news-badge-award    { background-color: #d69e2e; }
+.news-badge-update   { background-color: #718096; }
+
 // Checklist
 
 ul.task-list {
@@ -175,23 +197,23 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2rem;
 
     a {
       img {
-        width: 3.2rem;
-        height: 3.2rem;
-        margin-bottom: 1rem;
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-bottom: 0.5rem;
       }
 
       svg {
-        width: 3.5rem;
-        height: 4rem;
-        margin-bottom: 0.5rem;
+        width: 1.8rem;
+        height: 2rem;
+        margin-bottom: 0.25rem;
 
         image {
-          width: 3.5rem;
-          height: 3.5rem;
+          width: 1.8rem;
+          height: 1.8rem;
         }
       }
 
