@@ -82,14 +82,23 @@ ul.task-list input[type="checkbox"] {
 
   .more-info {
     margin-bottom: 5px;
-    margin-top: 5px;
-    font-family: monospace;
+    margin-top: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--global-text-color-light);
+    line-height: 1.5;
 
     p {
       display: inline-block;
       margin: 0;
     }
   }
+}
+
+// Prevent body text from wrapping around the floated profile photo.
+.post > article > .clearfix {
+  overflow: hidden;
 }
 
 .profile.float-right {
