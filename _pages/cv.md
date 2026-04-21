@@ -124,7 +124,7 @@ nav_order: 5
 <div class="cv-name">Marishka Manoj Mehta</div>
 <div class="cv-tagline">PhD Candidate · Computational Psychiatry</div>
 <div class="cv-contact">
-  Laureate Institute for Brain Research<span class="dot">·</span>Tulsa, OK<span class="dot">·</span>marishka.mehta@gmail.com<br>
+  Laureate Institute for Brain Research<span class="dot">·</span>Tulsa, OK<span class="dot">·</span>marishka.mehta [at] gmail.com<br>
   <a href="https://marishkamehta.github.io">marishkamehta.github.io</a>
   <span class="dot">·</span>
   <a href="https://scholar.google.com/citations?user=1yN0-N8AAAAJ">Google Scholar</a>

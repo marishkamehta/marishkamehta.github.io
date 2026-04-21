@@ -97,8 +97,11 @@ ul.task-list input[type="checkbox"] {
 }
 
 // Prevent body text from wrapping around the floated profile photo.
-.post > article > .clearfix {
-  overflow: hidden;
+// Only applied on screens wide enough for the side-by-side layout (576px+).
+@media (min-width: 576px) {
+  .post > article > .clearfix {
+    overflow: hidden;
+  }
 }
 
 .profile.float-right {
