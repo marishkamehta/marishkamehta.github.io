@@ -1,16 +1,16 @@
 metadata:
-  last_updated: '2026-04-29'
+  last_updated: '2026-05-01'
   summary:
     h_index: 7
     i10_index: 5
-    total_citations: 684
+    total_citations: 686
 papers:
   1yN0-N8AAAAJ:2osOgNQ5qMEC:
     citations: 9
     title: Corticosteroid-binding globulin deficiency specifically impairs contextual and recognition memory consolidation in male mice
     year: '2019'
   1yN0-N8AAAAJ:9yKSN-GCB0IC:
-    citations: 527
+    citations: 528
     title: 'On what motivates us: a detailed review of intrinsic v. extrinsic motivation'
     year: '2022'
   1yN0-N8AAAAJ:IjCSPb-OGe4C:
@@ -86,6 +86,6 @@ papers:
     title: 256. Investigating the Neural Encoding of Reward Prediction Errors and Anhedonia Using 7-Tesla MRI
     year: '2025'
   1yN0-N8AAAAJ:zYLM7Y9cAGgC:
-    citations: 79
+    citations: 80
     title: The empirical status of predictive coding and active inference
     year: '2024'
