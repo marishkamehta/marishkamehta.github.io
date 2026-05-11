@@ -1,16 +1,16 @@
 metadata:
-  last_updated: '2026-05-01'
+  last_updated: '2026-05-11'
   summary:
     h_index: 7
-    i10_index: 5
-    total_citations: 686
+    i10_index: 6
+    total_citations: 691
 papers:
   1yN0-N8AAAAJ:2osOgNQ5qMEC:
     citations: 9
     title: Corticosteroid-binding globulin deficiency specifically impairs contextual and recognition memory consolidation in male mice
     year: '2019'
   1yN0-N8AAAAJ:9yKSN-GCB0IC:
-    citations: 528
+    citations: 529
     title: 'On what motivates us: a detailed review of intrinsic v. extrinsic motivation'
     year: '2022'
   1yN0-N8AAAAJ:IjCSPb-OGe4C:
@@ -34,7 +34,7 @@ papers:
     title: Pavlovian bias is associated with symptom severity but not diagnostic status in individuals with both anxious and non-anxious depression
     year: '2025'
   1yN0-N8AAAAJ:W7OEmFMy1HYC:
-    citations: 9
+    citations: 10
     title: 'Relationships between depression, anxiety, and motivation in the real-world: Effects of physical activity and screentime'
     year: '2024'
   1yN0-N8AAAAJ:WF5omc3nYNoC:
@@ -86,6 +86,6 @@ papers:
     title: 256. Investigating the Neural Encoding of Reward Prediction Errors and Anhedonia Using 7-Tesla MRI
     year: '2025'
   1yN0-N8AAAAJ:zYLM7Y9cAGgC:
-    citations: 80
+    citations: 83
     title: The empirical status of predictive coding and active inference
     year: '2024'
