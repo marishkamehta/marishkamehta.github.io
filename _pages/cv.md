@@ -183,6 +183,10 @@ nav_order: 5
 
 <h2>Fellowships, Awards &amp; Honors</h2>
 
+<div class="entry"><div class="entry-head"><div class="entry-title">Travel Award</div><div class="entry-date">Jul 2026</div></div><div class="entry-sub">2026 Summer School on Simulation-Based Inference, "Unlocking New Horizons in Cognitive Modeling with Simulation-Based Inference"</div></div>
+
+<div class="entry"><div class="entry-head"><div class="entry-title">Travel Award</div><div class="entry-date">Jul 2026</div></div><div class="entry-sub">Computational Psychiatry Conference</div></div>
+
 <div class="entry"><div class="entry-head"><div class="entry-title">Dissertation Completion Fellowship</div><div class="entry-date">Jun 2026 – May 2027</div></div><div class="entry-sub">The University of Tulsa</div></div>
 
 <div class="entry"><div class="entry-head"><div class="entry-title">Trainee Professional Development Award <span style="font-weight:400;">($1,000)</span></div><div class="entry-date">Nov 2025</div></div><div class="entry-sub">Society for Neuroscience</div></div>
@@ -311,8 +315,5 @@ nav_order: 5
 <div class="skill-row"><span class="skill-label">Task design &amp; data collection</span> · PsychoPy, jsPsych, REDCap</div>
 <div class="skill-row"><span class="skill-label">Open &amp; reproducible science</span> · Preregistration (incl. published preregistered study), Git, SLURM-based HPC</div>
 <div class="skill-row"><span class="skill-label">Clinical research</span> · Structured clinical interviews, standardized symptom assessments, IRB coordination</div>
-
-<h2>References</h2>
-<p style="margin:4pt 0 0 0;"><em>Available upon request.</em></p>
 
 </div>
