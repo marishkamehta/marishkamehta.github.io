@@ -6,22 +6,23 @@
 
 .news-badge {
   display: inline-block;
-  padding: 0.15rem 0.5rem;
-  font-size: 0.7rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  padding: 0.12rem 0.42rem;
+  font-size: 0.68rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
   border-radius: 0.25rem;
   color: #fff;
   background-color: var(--global-theme-color);
   white-space: nowrap;
+  opacity: 0.88;
 }
 
 .news-badge-preprint { background-color: #5b8def; }
 .news-badge-paper    { background-color: #2c7a7b; }
 .news-badge-poster   { background-color: #38a169; }
 .news-badge-talk     { background-color: #805ad5; }
-.news-badge-award    { background-color: #d69e2e; }
+.news-badge-award    { background-color: #b55d7d; }
 .news-badge-update   { background-color: #718096; }
 
 // Checklist
