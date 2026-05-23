@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD Candidate · Computational Psychiatry · <a href="https://www.laureateinstitute.org/" target="_blank">Laureate Institute for Brain Research</a>
+subtitle: PhD Candidate in Computational Psychiatry · <a href="https://www.laureateinstitute.org/" target="_blank">Laureate Institute for Brain Research</a>
 
 profile:
   align: right
@@ -25,8 +25,12 @@ latest_posts:
   enabled: false
 ---
 
-I am a final-year PhD student in computational psychiatry, completing my [doctorate](https://sites.utulsa.edu/cyber-students/marishka-mehta/) in **early 2027**. My research at the [Laureate Institute for Brain Research](https://www.laureateinstitute.org/), advised by [Dr. Ryan Smith](https://www.laureateinstitute.org/ryan-smith.html), draws on computational theories of decision-making and motivation. This work uses Bayesian and reinforcement-learning models, behavioral paradigms, neuroimaging, and advanced statistical and machine learning approaches to characterize latent cognitive and psychological processes. The aim is to understand how individual differences in these processes contribute to psychiatric heterogeneity across depression, anxiety, and substance use disorders — and to translate that understanding into tools that support more precise assessment and prediction of symptom improvement.
+I am a final-year PhD candidate in computational psychiatry at the [Laureate Institute for Brain Research](https://www.laureateinstitute.org/), advised by [Dr. Ryan Smith](https://www.laureateinstitute.org/ryan-smith.html), and expect to complete my [doctorate](https://sites.utulsa.edu/cyber-students/marishka-mehta/) in **early 2027**. My research develops and applies computational models to understand how people make decisions when choices are uncertain, costly, rewarding, or in conflict, and why those patterns differ across depression, anxiety, and substance use disorders.
 
-My dissertation addresses planning behavior and interoception across psychiatric conditions. The planning work spans three projects: approach-avoidance conflict, multi-step planning under anxiety, and uncertainty resolution through model-based and model-free control. I have worked on complementary projects using 3T and 7T fMRI, spanning motivation, agency, outcome processing, and digital health. Across projects, I prioritize streamlined, reproducible workflows and scalable implementation.
+I am especially interested in the processes that shape motivation: when people persist, avoid, explore, disengage, or update their expectations. My work combines behavioral task design, Bayesian modeling, reinforcement-learning models, neuroimaging, and statistical learning. I use these tools to make hidden cognitive processes measurable and relate them to symptoms, diagnosis, brain function, and clinical heterogeneity.
 
-Before starting my PhD, I completed my Master's thesis with [Dr. Laurel Morris](https://www.psy.ox.ac.uk/people/laurel-morris) at the [Depression and Anxiety Center](https://icahn.mssm.edu/research/depression-anxiety-center), Mount Sinai, where I subsequently worked as a Clinical Research Coordinator on projects involving 7T fMRI, motivation, and digital phenotyping. My research has been shaped by interdisciplinary and cross-cultural training across six institutions on three continents, including a dual Master's in Neuroscience through the [Neurasmus](https://neurasmus-master.eu/) program.
+My dissertation approaches these questions through two domains: planning and interoception. In the planning work, I study approach-avoidance conflict, multi-step planning, and uncertainty resolution through model-based and model-free control. In the interoception work, I examine how internal bodily signals may relate to psychiatric symptoms and transdiagnostic variation.
+
+In addition to my dissertation, I have contributed to projects on motivation, self-agency, outcome processing, and digital phenotyping. Some of this work used 3T and 7T fMRI; other projects used behavioral tasks, clinical measures, and real-world digital data. Across projects, I build reproducible workflows, document modeling choices clearly, and design analyses that can scale beyond a single dataset.
+
+Before starting my PhD, I completed my Master's thesis with [Dr. Laurel Morris](https://www.psy.ox.ac.uk/people/laurel-morris) at the [Depression and Anxiety Center](https://icahn.mssm.edu/research/depression-anxiety-center), Mount Sinai, where I later worked as a Clinical Research Coordinator. My training spans six institutions on three continents, including a dual Master's in Neuroscience through the [Neurasmus](https://neurasmus-master.eu/) program.
