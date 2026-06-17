@@ -1,20 +1,20 @@
 metadata:
-  last_updated: '2026-06-12'
+  last_updated: '2026-06-17'
   summary:
     h_index: 7
     i10_index: 6
-    total_citations: 724
+    total_citations: 729
 papers:
   1yN0-N8AAAAJ:2osOgNQ5qMEC:
     citations: 9
     title: Corticosteroid-binding globulin deficiency specifically impairs contextual and recognition memory consolidation in male mice
     year: '2019'
   1yN0-N8AAAAJ:9yKSN-GCB0IC:
-    citations: 556
+    citations: 558
     title: 'On what motivates us: a detailed review of intrinsic v. extrinsic motivation'
     year: '2022'
   1yN0-N8AAAAJ:IjCSPb-OGe4C:
-    citations: 17
+    citations: 18
     title: Reward-related self-agency is disturbed in depression and anxiety
     year: '2023'
   1yN0-N8AAAAJ:LkGwnXOMwfcC:
@@ -24,7 +24,7 @@ papers:
   1yN0-N8AAAAJ:Se3iqnhoufwC:
     citations: 0
     title: 'Attenuated learning rates for negative outcomes in substance use disorders: A replication and extension of prior longitudinal computational modeling results'
-    year: '2025'
+    year: '2026'
   1yN0-N8AAAAJ:Tyk-4Ss8FVUC:
     citations: 10
     title: 'Intrinsic and extrinsic control impact motivation and outcome sensitivity: the role of anhedonia, stress, and anxiety'
@@ -42,7 +42,7 @@ papers:
     title: Computational approaches for uncovering interoceptive mechanisms in psychiatric disorders and their biological basis
     year: '2025'
   1yN0-N8AAAAJ:Y0pCki6q_DkC:
-    citations: 1
+    citations: 2
     title: Computational mechanisms underlying multi-step planning deficits in methamphetamine use disorder
     year: '2025'
   1yN0-N8AAAAJ:YsMSGLbcyi4C:
@@ -58,7 +58,7 @@ papers:
     title: P327. Comparing Denoising Approaches in Ultra-High Field Resting State fMRI
     year: '2022'
   1yN0-N8AAAAJ:eQOLeE2rZwMC:
-    citations: 1
+    citations: 2
     title: Computational mechanisms of approach-avoidance conflict predictively differentiate between affective and substance use disorders
     year: '2025'
   1yN0-N8AAAAJ:hqOjcs7Dif8C:
