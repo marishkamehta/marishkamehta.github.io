@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-06-17'
+  last_updated: '2026-06-24'
   summary:
     h_index: 7
     i10_index: 6
-    total_citations: 729
+    total_citations: 731
 papers:
   1yN0-N8AAAAJ:2osOgNQ5qMEC:
     citations: 9
@@ -86,6 +86,6 @@ papers:
     title: 256. Investigating the Neural Encoding of Reward Prediction Errors and Anhedonia Using 7-Tesla MRI
     year: '2025'
   1yN0-N8AAAAJ:zYLM7Y9cAGgC:
-    citations: 86
+    citations: 88
     title: The empirical status of predictive coding and active inference
     year: '2024'
