@@ -183,8 +183,6 @@ nav_order: 5
 
 <h2>Fellowships, Awards &amp; Honors</h2>
 
-<div class="entry"><div class="entry-head"><div class="entry-title">Travel Award</div><div class="entry-date">Jul 2026</div></div><div class="entry-sub">2026 Summer School on Simulation-Based Inference, "Unlocking New Horizons in Cognitive Modeling with Simulation-Based Inference"</div></div>
-
 <div class="entry"><div class="entry-head"><div class="entry-title">Travel Award</div><div class="entry-date">Jul 2026</div></div><div class="entry-sub">Computational Psychiatry Conference</div></div>
 
 <div class="entry"><div class="entry-head"><div class="entry-title">Dissertation Completion Fellowship</div><div class="entry-date">Jun 2026 – May 2027</div></div><div class="entry-sub">The University of Tulsa</div></div>
