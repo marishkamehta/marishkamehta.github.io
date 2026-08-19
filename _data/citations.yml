@@ -1,24 +1,28 @@
 metadata:
-  last_updated: '2026-07-27'
+  last_updated: '2026-08-19'
   summary:
-    h_index: 7
-    i10_index: 6
-    total_citations: 759
+    h_index: 8
+    i10_index: 4
+    total_citations: 755
 papers:
+  1yN0-N8AAAAJ:0EnyYjriUFMC:
+    citations: 0
+    title: "Abstracts for the Twelfth Annual Meeting of the Society for Neuro-Oncology: November 15\u201318, 2007"
+    year: '2007'
   1yN0-N8AAAAJ:2osOgNQ5qMEC:
     citations: 9
     title: Corticosteroid-binding globulin deficiency specifically impairs contextual and recognition memory consolidation in male mice
     year: '2019'
   1yN0-N8AAAAJ:9yKSN-GCB0IC:
-    citations: 579
+    citations: 569
     title: 'On what motivates us: a detailed review of intrinsic v. extrinsic motivation'
     year: '2022'
   1yN0-N8AAAAJ:IjCSPb-OGe4C:
-    citations: 19
+    citations: 18
     title: Reward-related self-agency is disturbed in depression and anxiety
     year: '2023'
   1yN0-N8AAAAJ:LkGwnXOMwfcC:
-    citations: 7
+    citations: 9
     title: Digital measures of activity and motivation impact depression and anxiety in the real world
     year: '2025'
   1yN0-N8AAAAJ:Se3iqnhoufwC:
@@ -26,7 +30,7 @@ papers:
     title: 'Attenuated learning rates for negative outcomes in substance use disorders: A replication and extension of prior longitudinal computational modeling results'
     year: '2026'
   1yN0-N8AAAAJ:Tyk-4Ss8FVUC:
-    citations: 10
+    citations: 9
     title: 'Intrinsic and extrinsic control impact motivation and outcome sensitivity: the role of anhedonia, stress, and anxiety'
     year: '2024'
   1yN0-N8AAAAJ:UebtZRa9Y70C:
@@ -34,7 +38,7 @@ papers:
     title: Pavlovian bias is associated with symptom severity but not diagnostic status in individuals with both anxious and non-anxious depression
     year: '2025'
   1yN0-N8AAAAJ:W7OEmFMy1HYC:
-    citations: 10
+    citations: 9
     title: 'Relationships between depression, anxiety, and motivation in the real-world: Effects of physical activity and screentime'
     year: '2024'
   1yN0-N8AAAAJ:WF5omc3nYNoC:
@@ -42,7 +46,7 @@ papers:
     title: Computational approaches for uncovering interoceptive mechanisms in psychiatric disorders and their biological basis
     year: '2025'
   1yN0-N8AAAAJ:Y0pCki6q_DkC:
-    citations: 2
+    citations: 3
     title: Computational mechanisms underlying multi-step planning deficits in methamphetamine use disorder
     year: '2025'
   1yN0-N8AAAAJ:YsMSGLbcyi4C:
@@ -66,7 +70,7 @@ papers:
     title: VTA network dominance in depression confers distinct psychopathological states through blunted neural tracking of reward prediction errors
     year: '2025'
   1yN0-N8AAAAJ:qjMakFHDy7sC:
-    citations: 20
+    citations: 22
     title: Ventral tegmental area integrity measured with high-resolution 7-Tesla MRI relates to motivation across depression and anxiety diagnoses
     year: '2022'
   1yN0-N8AAAAJ:roLk4NBRz8UC:
@@ -86,6 +90,6 @@ papers:
     title: 256. Investigating the Neural Encoding of Reward Prediction Errors and Anhedonia Using 7-Tesla MRI
     year: '2025'
   1yN0-N8AAAAJ:zYLM7Y9cAGgC:
-    citations: 93
+    citations: 97
     title: The empirical status of predictive coding and active inference
     year: '2024'
