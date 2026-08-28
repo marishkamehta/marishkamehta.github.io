@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-08-19'
+  last_updated: '2026-08-28'
   summary:
     h_index: 8
     i10_index: 4
-    total_citations: 755
+    total_citations: 766
 papers:
   1yN0-N8AAAAJ:0EnyYjriUFMC:
     citations: 0
@@ -14,7 +14,7 @@ papers:
     title: Corticosteroid-binding globulin deficiency specifically impairs contextual and recognition memory consolidation in male mice
     year: '2019'
   1yN0-N8AAAAJ:9yKSN-GCB0IC:
-    citations: 569
+    citations: 577
     title: 'On what motivates us: a detailed review of intrinsic v. extrinsic motivation'
     year: '2022'
   1yN0-N8AAAAJ:IjCSPb-OGe4C:
@@ -70,7 +70,7 @@ papers:
     title: VTA network dominance in depression confers distinct psychopathological states through blunted neural tracking of reward prediction errors
     year: '2025'
   1yN0-N8AAAAJ:qjMakFHDy7sC:
-    citations: 22
+    citations: 23
     title: Ventral tegmental area integrity measured with high-resolution 7-Tesla MRI relates to motivation across depression and anxiety diagnoses
     year: '2022'
   1yN0-N8AAAAJ:roLk4NBRz8UC:
@@ -90,6 +90,6 @@ papers:
     title: 256. Investigating the Neural Encoding of Reward Prediction Errors and Anhedonia Using 7-Tesla MRI
     year: '2025'
   1yN0-N8AAAAJ:zYLM7Y9cAGgC:
-    citations: 97
+    citations: 99
     title: The empirical status of predictive coding and active inference
     year: '2024'
