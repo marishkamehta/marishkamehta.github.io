@@ -1,9 +1,9 @@
 metadata:
-  last_updated: '2026-08-28'
+  last_updated: '2026-09-04'
   summary:
-    h_index: 8
-    i10_index: 4
-    total_citations: 766
+    h_index: 9
+    i10_index: 5
+    total_citations: 785
 papers:
   1yN0-N8AAAAJ:0EnyYjriUFMC:
     citations: 0
@@ -13,12 +13,20 @@ papers:
     citations: 9
     title: Corticosteroid-binding globulin deficiency specifically impairs contextual and recognition memory consolidation in male mice
     year: '2019'
+  1yN0-N8AAAAJ:5nxA0vEk-isC:
+    citations: 11
+    title: Congenital hernia through the foramen of Morgagni (a case report)
+    year: '1990'
+  1yN0-N8AAAAJ:8k81kl-MbHgC:
+    citations: 0
+    title: Rule based classification approach for mapping land degradation
+    year: '2013'
   1yN0-N8AAAAJ:9yKSN-GCB0IC:
-    citations: 577
+    citations: 584
     title: 'On what motivates us: a detailed review of intrinsic v. extrinsic motivation'
     year: '2022'
   1yN0-N8AAAAJ:IjCSPb-OGe4C:
-    citations: 18
+    citations: 19
     title: Reward-related self-agency is disturbed in depression and anxiety
     year: '2023'
   1yN0-N8AAAAJ:LkGwnXOMwfcC:
