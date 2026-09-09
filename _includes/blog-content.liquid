@@ -1,0 +1,5 @@
+{{
+  include.content
+  | replace: '<table', '<div class="blog-table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table'
+  | replace: '</table>', '</table></div>'
+}}

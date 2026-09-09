@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560" role="img" aria-labelledby="title desc">
+  <title id="title">One experimental pipeline can use five infrastructure routes</title>
+  <desc id="desc">The behavioral task and shared client remain fixed. The researcher chooses one of five generic infrastructure routes, and every route produces a research record.</desc>
+  <defs><style>text{font-family:Roboto,Arial,sans-serif;fill:#000}.kicker{font-size:13px;font-weight:500;letter-spacing:1.2px;fill:#b509ac}.title{font-size:27px;font-weight:500}.head{font-size:17px;font-weight:500}.number{font-size:17px;font-weight:500;fill:#b509ac}.body{font-size:14px}.small{font-size:13px;fill:#222}.step{fill:#fff;stroke:#1c1c1d;stroke-width:1.75}.route{fill:#fff;stroke:#555;stroke-width:1.5}.accent{fill:#b509ac}</style></defs>
+  <rect width="1100" height="560" fill="#fff"/>
+  <text x="50" y="40" class="kicker">WHAT CHANGES—AND WHAT DOES NOT</text>
+  <text x="50" y="75" class="title">The task stays fixed while the infrastructure route changes</text>
+  <line x1="50" y1="96" x2="1050" y2="96" stroke="#1c1c1d" stroke-width="2"/>
+
+  <rect x="50" y="120" width="220" height="92" rx="4" class="step"/><rect x="50" y="120" width="7" height="92" class="accent"/>
+  <text x="76" y="155" class="number">1</text><text x="104" y="155" class="head">Behavioral task</text><text x="76" y="184" class="small">conditions · trials · history</text>
+  <text x="290" y="172" text-anchor="middle" class="head">+</text>
+  <rect x="310" y="120" width="220" height="92" rx="4" class="step"/><rect x="310" y="120" width="7" height="92" class="accent"/>
+  <text x="336" y="155" class="number">2</text><text x="364" y="155" class="head">Shared client</text><text x="336" y="184" class="small">one experimental interface</text>
+  <text x="550" y="172" text-anchor="middle" class="head">+</text>
+  <rect x="570" y="120" width="220" height="92" rx="4" class="step"/><rect x="570" y="120" width="7" height="92" class="accent"/>
+  <text x="596" y="155" class="number">3</text><text x="624" y="155" class="head">One route</text><text x="596" y="184" class="small">selected for the study</text>
+  <text x="810" y="172" text-anchor="middle" class="head">=</text>
+  <rect x="830" y="120" width="220" height="92" rx="4" class="step"/><rect x="830" y="120" width="7" height="92" class="accent"/>
+  <text x="856" y="155" class="number">4</text><text x="884" y="155" class="head">Research record</text><text x="856" y="184" class="small">responses · settings</text><text x="856" y="202" class="small">provenance</text>
+
+  <text x="50" y="250" class="kicker">THE FIVE ROUTE CATEGORIES</text>
+  <line x1="50" y1="271" x2="1050" y2="271" stroke="#555" stroke-width="1.5"/>
+  <text x="70" y="310" class="head">No-model testing</text><text x="340" y="310" class="body">Check the procedure before adding model behavior</text>
+  <line x1="70" y1="329" x2="1030" y2="329" stroke="#777" stroke-width="1"/>
+  <text x="70" y="363" class="head">Direct hosted API</text><text x="340" y="363" class="body">A provider operates the model infrastructure</text>
+  <line x1="70" y1="382" x2="1030" y2="382" stroke="#777" stroke-width="1"/>
+  <text x="70" y="416" class="head">Local runner</text><text x="340" y="416" class="body">The model runs on a computer controlled by the researcher</text>
+  <line x1="70" y1="435" x2="1030" y2="435" stroke="#777" stroke-width="1"/>
+  <text x="70" y="469" class="head">Managed cloud deployment</text><text x="340" y="469" class="body">An institution or provider manages the deployment</text>
+  <line x1="70" y1="488" x2="1030" y2="488" stroke="#777" stroke-width="1"/>
+  <text x="70" y="522" class="head">Configurable inference server</text><text x="340" y="522" class="body">The researcher controls more of the serving environment</text>
+</svg>

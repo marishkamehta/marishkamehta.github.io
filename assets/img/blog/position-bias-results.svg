@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="390" viewBox="0 0 920 390" role="img" aria-labelledby="title desc">
+  <title id="title">Did Qwen retain the answer identity or the displayed position after the swap?</title>
+  <desc id="desc">With the original prompt, Qwen retained the same underlying answer identity X or Y after the swap for 24 of 36 pairs and retained the same displayed position A or B for 12. After the warning was removed, the counts were 25 and 11.</desc>
+  <defs>
+    <style>
+      .title { font: 700 24px Arial, sans-serif; fill: #182230; }
+      .subtitle { font: 16px Arial, sans-serif; fill: #475467; }
+      .row { font: 700 17px Arial, sans-serif; fill: #344054; }
+      .inside { font: 700 16px Arial, sans-serif; fill: #ffffff; }
+      .legend { font: 15px Arial, sans-serif; fill: #344054; }
+      .panel { fill: #f8fafc; stroke: #d0d5dd; stroke-width: 1.5; }
+      .same { fill: #4f8f69; }
+      .changed { fill: #c66b45; }
+    </style>
+    <style>
+      text{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif!important}
+      .title{fill:#111;font-size:22px;letter-spacing:-.25px}.subtitle{font-size:14px;fill:#333}.panel{fill:#fff;stroke:#999;stroke-width:1.25}
+      rect[rx]{rx:4px}.same{fill:#0076df}.changed{fill:#f92080}.row,.legend{fill:#222}
+    </style>
+  </defs>
+
+  <rect width="920" height="390" fill="#ffffff"/>
+  <text x="460" y="40" text-anchor="middle" class="title">What remained consistent after X and Y changed positions?</text>
+  <text x="460" y="68" text-anchor="middle" class="subtitle">The same 36 answer pairs were tested in each prompt condition</text>
+
+  <rect x="45" y="96" width="830" height="210" rx="16" class="panel"/>
+
+  <text x="210" y="160" text-anchor="end" class="row">Original prompt</text>
+  <rect x="235" y="129" width="400" height="50" class="same"/>
+  <rect x="635" y="129" width="200" height="50" class="changed"/>
+  <text x="435" y="160" text-anchor="middle" class="inside">24 of 36 pairs</text>
+  <text x="735" y="160" text-anchor="middle" class="inside">12 of 36 pairs</text>
+
+  <text x="210" y="244" text-anchor="end" class="row">Warning removed</text>
+  <rect x="235" y="213" width="416.7" height="50" class="same"/>
+  <rect x="651.7" y="213" width="183.3" height="50" class="changed"/>
+  <text x="443.4" y="244" text-anchor="middle" class="inside">25 of 36 pairs</text>
+  <text x="743.4" y="244" text-anchor="middle" class="inside">11 of 36 pairs</text>
+
+  <rect x="272" y="337" width="17" height="17" rx="3" class="same"/>
+  <text x="300" y="351" class="legend">Answer identity retained (X/Y)</text>
+  <rect x="575" y="337" width="17" height="17" rx="3" class="changed"/>
+  <text x="603" y="351" class="legend">Displayed position retained (A/B)</text>
+</svg>

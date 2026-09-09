@@ -1,0 +1,49 @@
+{% assign series_groups = 'What this series covers|Concepts and choices|Pipeline and model setup' | split: '|' %}
+<aside class="blog-sidebar" aria-label="Blog series contents">
+  <h3>Contents</h3>
+  {% for group_title in series_groups %}
+    {% case forloop.index %}
+      {% when 1 %}
+        {% assign group_slugs = 'controlled-experiments,quick-start,first-experiment,belief-bias,position-bias' | split: ',' %}
+      {% when 2 %}
+        {% assign group_slugs = 'infrastructure-vocabulary,experimental-vocabulary,choosing-a-backend' | split: ',' %}
+      {% when 3 %}
+        {% assign group_slugs = 'mock-pipeline,hosted-api,ollama,azure,vllm' | split: ',' %}
+    {% endcase %}
+    {% assign group_active = false %}
+    {% for slug in group_slugs %}
+      {% assign series_post = site.posts | where: 'slug', slug | first %}
+      {% if page.url == series_post.url %}
+        {% assign group_active = true %}
+      {% elsif page.url == '/blog/' and slug == 'controlled-experiments' %}
+        {% assign group_active = true %}
+      {% endif %}
+    {% endfor %}
+    <details
+      {% if group_active %}
+        open
+      {% endif %}
+    >
+      <summary>{{ group_title }}</summary>
+      <ul>
+        {% for slug in group_slugs %}
+          {% assign series_post = site.posts | where: 'slug', slug | first %}
+          {% assign series_url = series_post.url %}
+          {% if slug == 'controlled-experiments' %}
+            {% assign series_url = '/blog/' %}
+          {% endif %}
+          <li>
+            <a
+              href="{{ series_url | relative_url }}"
+              {% if page.url == series_url or page.url == series_post.url %}
+                aria-current="page"
+              {% endif %}
+            >
+              {{- series_post.title -}}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </details>
+  {% endfor %}
+</aside>

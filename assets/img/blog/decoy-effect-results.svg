@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="430" viewBox="0 0 920 430" role="img" aria-labelledby="title desc">
+  <title id="title">Hotel choices with and without the dominated decoy</title>
+  <desc id="desc">Gemini chose hotel B on all five control observations. When inferior hotel C was added, Gemini chose target hotel A on four observations and hotel B on one.</desc>
+  <defs>
+    <style>
+      text { font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+      .title { font-size: 22px; font-weight: 700; fill: #111111; letter-spacing: -0.25px; }
+      .subtitle { font-size: 14px; fill: #333333; }
+      .row { font-size: 17px; font-weight: 700; fill: #222222; }
+      .inside { font-size: 16px; font-weight: 700; fill: #ffffff; }
+      .outside { font-size: 15px; font-weight: 700; fill: #222222; }
+      .legend { font-size: 15px; fill: #222222; }
+      .panel { fill: #ffffff; stroke: #999999; stroke-width: 1.25; }
+      .target { fill: #0076df; }
+      .competitor { fill: #f92080; }
+    </style>
+  </defs>
+
+  <rect width="920" height="430" fill="#ffffff"/>
+  <text x="460" y="40" text-anchor="middle" class="title">Adding the decoy shifted choices toward hotel A</text>
+  <text x="460" y="68" text-anchor="middle" class="subtitle">Gemini 3.6 Flash · five observations per condition</text>
+
+  <rect x="45" y="96" width="830" height="230" rx="4" class="panel"/>
+
+  <text x="220" y="170" text-anchor="end" class="row">Control: A and B</text>
+  <rect x="245" y="137" width="560" height="52" rx="4" class="competitor"/>
+  <text x="525" y="170" text-anchor="middle" class="inside">B · 5 of 5</text>
+  <text x="815" y="170" class="outside">A · 0</text>
+
+  <text x="220" y="264" text-anchor="end" class="row">Decoy: A, B, and C</text>
+  <rect x="245" y="231" width="448" height="52" rx="4" class="target"/>
+  <rect x="693" y="231" width="112" height="52" rx="4" class="competitor"/>
+  <text x="469" y="264" text-anchor="middle" class="inside">A · 4 of 5</text>
+  <text x="749" y="264" text-anchor="middle" class="inside">B · 1</text>
+
+  <rect x="292" y="365" width="17" height="17" rx="3" class="target"/>
+  <text x="320" y="379" class="legend">Target hotel A</text>
+  <rect x="515" y="365" width="17" height="17" rx="3" class="competitor"/>
+  <text x="543" y="379" class="legend">Competitor hotel B</text>
+</svg>

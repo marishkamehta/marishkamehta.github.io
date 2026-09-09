@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="390" viewBox="0 0 920 390" role="img" aria-labelledby="title desc">
+  <title id="title">Did Qwen select the same A or B positional option when an exact prompt was repeated?</title>
+  <desc id="desc">With the original instructions, Qwen selected the same A or B positional option on all three repetitions for 66 of 72 comparison prompts. Six prompts produced a two-to-one split. After the warning was removed, the counts were 67 and five.</desc>
+  <defs>
+    <style>
+      .title { font: 700 24px Arial, sans-serif; fill: #182230; }
+      .subtitle { font: 16px Arial, sans-serif; fill: #475467; }
+      .row { font: 700 17px Arial, sans-serif; fill: #344054; }
+      .inside { font: 700 16px Arial, sans-serif; fill: #ffffff; }
+      .legend { font: 15px Arial, sans-serif; fill: #344054; }
+      .panel { fill: #f8fafc; stroke: #d0d5dd; stroke-width: 1.5; }
+      .agree { fill: #3568a8; }
+      .split { fill: #8ab4df; }
+    </style>
+    <style>
+      text{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif!important}
+      .title{fill:#111;font-size:22px;letter-spacing:-.25px}.subtitle{font-size:14px;fill:#333}.panel{fill:#fff;stroke:#999;stroke-width:1.25}
+      rect[rx]{rx:4px}.agree{fill:#0076df}.split{fill:#f92080}.row,.legend{fill:#222}
+    </style>
+  </defs>
+
+  <rect width="920" height="390" fill="#ffffff"/>
+  <text x="460" y="40" text-anchor="middle" class="title">Did Qwen repeat the same A/B positional option?</text>
+  <text x="460" y="68" text-anchor="middle" class="subtitle">Each of the 72 comparison prompts was sent three times</text>
+
+  <rect x="45" y="96" width="830" height="210" rx="16" class="panel"/>
+
+  <text x="210" y="160" text-anchor="end" class="row">Original prompt</text>
+  <rect x="235" y="129" width="550" height="50" class="agree"/>
+  <rect x="785" y="129" width="50" height="50" class="split"/>
+  <text x="510" y="160" text-anchor="middle" class="inside">Same positional option all 3 times · 66 prompts</text>
+  <text x="810" y="199" text-anchor="middle" class="row">6 split</text>
+
+  <text x="210" y="244" text-anchor="end" class="row">Warning removed</text>
+  <rect x="235" y="213" width="558.3" height="50" class="agree"/>
+  <rect x="793.3" y="213" width="41.7" height="50" class="split"/>
+  <text x="514" y="244" text-anchor="middle" class="inside">Same positional option all 3 times · 67 prompts</text>
+  <text x="814" y="283" text-anchor="middle" class="row">5 split</text>
+
+  <rect x="165" y="337" width="17" height="17" rx="3" class="agree"/>
+  <text x="193" y="351" class="legend">Same A/B positional option selected all three times</text>
+  <rect x="555" y="337" width="17" height="17" rx="3" class="split"/>
+  <text x="583" y="351" class="legend">Two-to-one split</text>
+</svg>

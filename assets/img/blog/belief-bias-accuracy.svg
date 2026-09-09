@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="560" viewBox="0 0 920 560" role="img" aria-labelledby="title desc">
+  <title id="title">Accuracy by NeuBAROCO content and temperature</title>
+  <desc id="desc">Accuracy on belief-inconsistent problems remains below accuracy on belief-consistent and symbolic problems from temperature zero to one.</desc>
+  <style>
+    text{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif!important}
+    text[fill="#17202a"],text[fill="#263238"]{fill:#111} text[fill="#52606d"]{fill:#333} [fill="#2468a2"]{fill:#0076df}[fill="#d05a35"]{fill:#f92080}[fill="#21866f"]{fill:#00ab37} text[fill="#1e5787"]{fill:#0076df}text[fill="#a94527"]{fill:#d60062}text[fill="#176b58"]{fill:#00842b} line{shape-rendering:crispEdges}
+  </style>
+  <rect width="920" height="560" fill="#fff"/>
+  <text x="460" y="38" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#17202a">Belief-inconsistent problems were harder at every temperature</text>
+  <text x="460" y="64" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#52606d">Qwen2.5-3B-Instruct · 366 problems · three responses per problem</text>
+  <g stroke="#dfe3e8"><line x1="95" y1="445" x2="820" y2="445"/><line x1="95" y1="355" x2="820" y2="355"/><line x1="95" y1="265" x2="820" y2="265"/><line x1="95" y1="175" x2="820" y2="175"/><line x1="95" y1="85" x2="820" y2="85"/></g>
+  <g font-family="Arial, sans-serif" font-size="13" fill="#52606d" text-anchor="end"><text x="82" y="450">40%</text><text x="82" y="360">50%</text><text x="82" y="270">60%</text><text x="82" y="180">70%</text><text x="82" y="90">80%</text></g>
+  <line x1="95" y1="445" x2="820" y2="445" stroke="#2f3b45" stroke-width="1.5"/>
+  <g font-family="Arial, sans-serif" font-size="13" fill="#52606d" text-anchor="middle"><text x="95" y="470">0.0</text><text x="240" y="470">0.2</text><text x="385" y="470">0.4</text><text x="530" y="470">0.6</text><text x="675" y="470">0.8</text><text x="820" y="470">1.0</text></g>
+  <text x="458" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#263238">Temperature</text>
+  <text transform="translate(28 265) rotate(-90)" text-anchor="middle" font-family="Arial, sans-serif" font-size="15" fill="#263238">Correct responses</text>
+  <polyline points="95,175 168,173 240,175 313,177 385,188 458,186 530,201 603,180 675,199 748,188 820,196" fill="none" stroke="#0076df" stroke-width="4"/>
+  <polyline points="95,320 168,323 240,320 313,320 385,329 458,308 530,317 603,317 675,317 748,311 820,290" fill="none" stroke="#f92080" stroke-width="4"/>
+  <polyline points="95,145 168,158 240,161 313,164 385,155 458,137 530,158 603,152 675,152 748,171 820,145" fill="none" stroke="#00ab37" stroke-width="4"/>
+  <g fill="#2468a2"><circle cx="95" cy="175" r="4"/><circle cx="168" cy="173" r="4"/><circle cx="240" cy="175" r="4"/><circle cx="313" cy="177" r="4"/><circle cx="385" cy="188" r="4"/><circle cx="458" cy="186" r="4"/><circle cx="530" cy="201" r="4"/><circle cx="603" cy="180" r="4"/><circle cx="675" cy="199" r="4"/><circle cx="748" cy="188" r="4"/><circle cx="820" cy="196" r="4"/></g>
+  <g fill="#d05a35"><circle cx="95" cy="320" r="4"/><circle cx="168" cy="323" r="4"/><circle cx="240" cy="320" r="4"/><circle cx="313" cy="320" r="4"/><circle cx="385" cy="329" r="4"/><circle cx="458" cy="308" r="4"/><circle cx="530" cy="317" r="4"/><circle cx="603" cy="317" r="4"/><circle cx="675" cy="317" r="4"/><circle cx="748" cy="311" r="4"/><circle cx="820" cy="290" r="4"/></g>
+  <g fill="#21866f"><circle cx="95" cy="145" r="4"/><circle cx="168" cy="158" r="4"/><circle cx="240" cy="161" r="4"/><circle cx="313" cy="164" r="4"/><circle cx="385" cy="155" r="4"/><circle cx="458" cy="137" r="4"/><circle cx="530" cy="158" r="4"/><circle cx="603" cy="152" r="4"/><circle cx="675" cy="152" r="4"/><circle cx="748" cy="171" r="4"/><circle cx="820" cy="145" r="4"/></g>
+  <g font-family="Arial, sans-serif" font-size="14" font-weight="700"><text x="830" y="149" fill="#176b58">Symbolic</text><text x="830" y="202" fill="#1e5787">Belief-consistent</text><text x="830" y="294" fill="#a94527">Belief-</text><text x="830" y="312" fill="#a94527">inconsistent</text></g>
+</svg>
