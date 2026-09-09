@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="440" viewBox="0 0 1050 440" role="img" aria-labelledby="title desc">
+  <title id="title">The mock tests the procedure, not model behavior</title>
+  <desc id="desc">Experimental materials pass through the pipeline to a mock backend and saved record. This checks the procedure but cannot test model behavior.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#1c1c1d"/></marker>
+    <style>text{font-family:Roboto,Arial,sans-serif;fill:#000}.kicker{font-size:13px;font-weight:500;letter-spacing:1.2px;fill:#b509ac}.title{font-size:27px;font-weight:500}.head{font-size:17px;font-weight:500}.body{font-size:14px}.small{font-size:13px;fill:#222}.box{fill:#fff;stroke:#1c1c1d;stroke-width:1.75}.arrow{stroke:#1c1c1d;stroke-width:2;fill:none;marker-end:url(#arrow)}.yes{fill:#b509ac}.no{fill:#1c1c1d}</style>
+  </defs>
+  <rect width="1050" height="440" fill="#fff"/>
+  <text x="45" y="40" class="kicker">TESTING WITHOUT A MODEL</text><text x="45" y="75" class="title">The mock checks whether the procedure works</text>
+  <line x1="45" y1="96" x2="1005" y2="96" stroke="#1c1c1d" stroke-width="2"/>
+
+  <rect x="55" y="135" width="250" height="82" rx="4" class="box"/><text x="180" y="168" text-anchor="middle" class="head">Experimental materials</text><text x="180" y="193" text-anchor="middle" class="small">instructions · trials · history</text>
+  <path d="M305 176H400" class="arrow"/>
+  <rect x="405" y="135" width="240" height="82" rx="4" class="box"/><rect x="405" y="135" width="7" height="82" class="yes"/><text x="525" y="168" text-anchor="middle" class="head">Mock backend</text><text x="525" y="193" text-anchor="middle" class="small">returns MOCK_RESPONSE</text>
+  <path d="M645 176H740" class="arrow"/>
+  <rect x="745" y="135" width="250" height="82" rx="4" class="box"/><text x="870" y="168" text-anchor="middle" class="head">Saved record</text><text x="870" y="193" text-anchor="middle" class="small">request · response · metadata</text>
+
+  <line x1="45" y1="260" x2="1005" y2="260" stroke="#777" stroke-width="1.25"/>
+  <circle cx="75" cy="307" r="8" class="yes"/><text x="100" y="313" class="head">It can test the procedure</text><text x="100" y="339" class="body">order, history, request construction, and recording</text>
+  <circle cx="555" cy="307" r="8" class="no"/><text x="580" y="313" class="head">It cannot test model behavior</text><text x="580" y="339" class="body">understanding, valid responses, or behavioral effects</text>
+  <line x1="45" y1="376" x2="1005" y2="376" stroke="#1c1c1d" stroke-width="2"/>
+  <text x="525" y="410" text-anchor="middle" class="small">Passing this check means the procedure runs—not that the experiment is valid.</text>
+</svg>

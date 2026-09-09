@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650" role="img" aria-labelledby="title desc">
+  <title id="title">The layers between an experiment and a language model</title>
+  <desc id="desc">A chat product or experimental client reaches a request interface, backend, specific model revision, and computing hardware. Each layer should be recorded.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#1c1c1d"/></marker>
+    <style>text{font-family:Roboto,Arial,sans-serif;fill:#000}.kicker{font-size:13px;font-weight:500;letter-spacing:1.2px;fill:#b509ac}.title{font-size:27px;font-weight:500}.head{font-size:17px;font-weight:500}.body{font-size:14px}.box{fill:#fff;stroke:#1c1c1d;stroke-width:1.75}.accent{stroke:#b509ac;stroke-width:5}.line{stroke:#1c1c1d;stroke-width:2;fill:none;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="1000" height="650" fill="#fff"/>
+  <text x="50" y="40" class="kicker">INFRASTRUCTURE VOCABULARY</text><text x="50" y="75" class="title">Each name identifies a different layer</text>
+  <line x1="50" y1="96" x2="950" y2="96" stroke="#1c1c1d" stroke-width="2"/>
+
+  <rect x="110" y="120" width="300" height="62" rx="4" class="box"/><text x="260" y="147" text-anchor="middle" class="head">Chat product</text><text x="260" y="169" text-anchor="middle" class="body">web or desktop interface</text>
+  <rect x="590" y="120" width="300" height="62" rx="4" class="box"/><text x="740" y="147" text-anchor="middle" class="head">Experimental client</text><text x="740" y="169" text-anchor="middle" class="body">code that administers the task</text>
+  <path d="M260 182V205H500V226M740 182V205H500V226" class="line"/>
+
+  <rect x="250" y="232" width="500" height="65" rx="4" class="box"/><line x1="250" y1="232" x2="250" y2="297" class="accent"/><text x="278" y="258" class="kicker">01</text><text x="325" y="258" class="head">Request interface</text><text x="325" y="282" class="body">endpoint · messages · roles · sampling settings</text>
+  <path d="M500 297V321" class="line"/>
+  <rect x="250" y="327" width="500" height="65" rx="4" class="box"/><line x1="250" y1="327" x2="250" y2="392" class="accent"/><text x="278" y="353" class="kicker">02</text><text x="325" y="353" class="head">Backend or model server</text><text x="325" y="377" class="body">hosted · local · managed · configurable</text>
+  <path d="M500 392V416" class="line"/>
+  <rect x="250" y="422" width="500" height="65" rx="4" class="box"/><line x1="250" y1="422" x2="250" y2="487" class="accent"/><text x="278" y="448" class="kicker">03</text><text x="325" y="448" class="head">Specific model + revision</text><text x="325" y="472" class="body">weights · tokenizer · chat template</text>
+  <path d="M500 487V511" class="line"/>
+  <rect x="250" y="517" width="500" height="65" rx="4" class="box"/><line x1="250" y1="517" x2="250" y2="582" class="accent"/><text x="278" y="543" class="kicker">04</text><text x="325" y="543" class="head">Compute</text><text x="325" y="567" class="body">provider cloud · GPU · CPU</text>
+  <text x="500" y="625" text-anchor="middle" class="body">Record every layer: a model name alone does not identify the system.</text>
+</svg>

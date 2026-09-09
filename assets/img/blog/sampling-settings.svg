@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="540" viewBox="0 0 1050 540" role="img" aria-labelledby="title desc">
+  <title id="title">Temperature and top-p change sampling in different ways</title>
+  <desc id="desc">Temperature changes the relative spread of token probabilities. Top-p removes the lower-probability tail from the eligible candidate set.</desc>
+  <defs><style>text{font-family:Roboto,Arial,sans-serif;fill:#000}.kicker{font-size:13px;font-weight:500;letter-spacing:1.2px;fill:#b509ac}.title{font-size:27px;font-weight:500}.head{font-size:18px;font-weight:500}.body{font-size:14px}.small{font-size:13px;fill:#222}.axis{stroke:#1c1c1d;stroke-width:1.5}.bar{fill:#b509ac}.excluded{fill:#fff;stroke:#555;stroke-width:1.5;stroke-dasharray:4 3}.divider{stroke:#1c1c1d;stroke-width:2}</style></defs>
+  <rect width="1050" height="540" fill="#fff"/>
+  <text x="45" y="40" class="kicker">SAMPLING SETTINGS</text><text x="45" y="75" class="title">Temperature changes the spread; top_p changes eligibility</text>
+  <text x="45" y="101" class="small">Conceptual probabilities—not output from a particular model</text>
+  <line x1="45" y1="122" x2="1005" y2="122" class="divider"/>
+  <line x1="525" y1="145" x2="525" y2="500" stroke="#777" stroke-width="1.25"/>
+
+  <text x="55" y="166" class="kicker">TEMPERATURE</text><text x="55" y="197" class="head">Redistributes probability</text>
+  <text x="55" y="222" class="body">Every illustrated token remains eligible.</text>
+  <text x="170" y="267" text-anchor="middle" class="small">lower</text><line x1="80" y1="375" x2="260" y2="375" class="axis"/>
+  <rect x="95" y="285" width="25" height="90" class="bar"/><rect x="130" y="335" width="25" height="40" class="bar"/><rect x="165" y="353" width="25" height="22" class="bar"/><rect x="200" y="363" width="25" height="12" class="bar"/>
+  <text x="385" y="267" text-anchor="middle" class="small">higher</text><line x1="295" y1="375" x2="475" y2="375" class="axis"/>
+  <rect x="310" y="315" width="25" height="60" class="bar"/><rect x="345" y="323" width="25" height="52" class="bar"/><rect x="380" y="332" width="25" height="43" class="bar"/><rect x="415" y="341" width="25" height="34" class="bar"/>
+  <text x="265" y="423" text-anchor="middle" class="body">Higher temperature makes lower-ranked tokens</text><text x="265" y="445" text-anchor="middle" class="body">more competitive.</text>
+
+  <text x="555" y="166" class="kicker">TOP_P</text><text x="555" y="197" class="head">Limits the candidate set</text>
+  <text x="555" y="222" class="body">Probability does not change; eligibility does.</text>
+
+  <text x="665" y="267" text-anchor="middle" class="small">lower</text>
+  <line x1="570" y1="375" x2="760" y2="375" class="axis"/>
+  <rect x="585" y="285" width="25" height="90" class="bar"/><rect x="620" y="323" width="25" height="52" class="bar"/>
+  <rect x="655" y="347" width="25" height="28" class="excluded"/><rect x="690" y="359" width="25" height="16" class="excluded"/><rect x="725" y="366" width="25" height="9" class="excluded"/>
+  <text x="665" y="405" text-anchor="middle" class="small">smaller eligible set</text>
+
+  <text x="890" y="267" text-anchor="middle" class="small">higher</text>
+  <line x1="795" y1="375" x2="985" y2="375" class="axis"/>
+  <rect x="810" y="285" width="25" height="90" class="bar"/><rect x="845" y="323" width="25" height="52" class="bar"/><rect x="880" y="347" width="25" height="28" class="bar"/><rect x="915" y="359" width="25" height="16" class="bar"/>
+  <rect x="950" y="366" width="25" height="9" class="excluded"/>
+  <text x="890" y="405" text-anchor="middle" class="small">larger eligible set</text>
+
+  <text x="775" y="455" text-anchor="middle" class="body">Higher top_p retains more of the probability distribution.</text>
+  <text x="775" y="480" text-anchor="middle" class="small">top_p = 1.0 retains every token.</text>
+</svg>
