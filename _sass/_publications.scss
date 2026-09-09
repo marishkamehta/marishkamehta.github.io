@@ -22,7 +22,9 @@
       text-decoration: none;
       color: var(--global-theme-color);
 
-      .value { color: var(--global-theme-color); }
+      .value {
+        color: var(--global-theme-color);
+      }
     }
 
     .value {
