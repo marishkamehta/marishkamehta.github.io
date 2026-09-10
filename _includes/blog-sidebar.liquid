@@ -1,4 +1,6 @@
-{% assign series_groups = 'What this series covers|Concepts and choices|Pipeline and model setup' | split: '|' %}
+{% assign series_groups = 'What this series covers|Appendix A: Terminology and model hosting|Appendix B: Model setup and pipeline testing'
+  | split: '|'
+%}
 <aside class="blog-sidebar" aria-label="Blog series contents">
   <h3>Contents</h3>
   {% for group_title in series_groups %}

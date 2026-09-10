@@ -56,18 +56,19 @@ LLM research, so that insights from each can inform the others.
 
 ---
 
-### Optional guides
+### Appendices
 
-These optional guides cover key concepts, infrastructure choices, and model
-setup.
+These appendices are optional references for the main series. Use Appendix A
+to look up unfamiliar terms and choose where to run a model, and Appendix B
+when you are ready to configure that connection and test your experiment.
 
-#### Concepts and choices
+#### Appendix A: Terminology and model hosting
 
 - **[Infrastructure Concepts for Behavioral Researchers](/blog/2026/infrastructure-vocabulary/)**
 - **[Behavioral Experimental Concepts for Technical Readers](/blog/2026/experimental-vocabulary/)**
 - **[Choosing Where the Model Runs](/blog/2026/choosing-a-backend/)**
 
-#### Pipeline and model setup
+#### Appendix B: Model setup and pipeline testing
 
 - **[Testing the Experimental Pipeline](/blog/2026/mock-pipeline/)**
 - **[Connecting Directly to a Hosted Model](/blog/2026/hosted-api/)**
