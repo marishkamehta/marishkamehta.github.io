@@ -228,14 +228,17 @@ response from a real model without changing the task logic.
 
 ## Citation
 
-To support scientific transparency and reproducibility, each public release of
-the pipeline will be archived on Zenodo and assigned a DOI.
+If you use the pipeline, cite the software using the metadata in the
+repository's [CITATION.cff](https://github.com/marishkamehta/llm-blog-repo/blob/main/CITATION.cff):
 
 ```text
 Dennis, D. K., & Mehta, M. M. (2026). LLM Behavioral Pipeline Template
-(Version 0.1.0)
-[Computer software]. Zenodo. https://doi.org/DOI-ADDED-AFTER-ARCHIVING
+(Version 0.1.0) [Computer software]. GitHub.
+https://github.com/marishkamehta/llm-blog-repo
 ```
+
+Record the Git commit hash used for your study alongside this citation so that
+readers can identify the exact code version.
 
 ---
 
