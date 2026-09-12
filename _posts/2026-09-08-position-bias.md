@@ -145,7 +145,7 @@ prompts also fit within the configured context window.
 ## Build the schedule before sending any requests
 
 The demonstration code and material instructions are in
-[`llm-behavior-demos`](../../llm-behavior-demos/). Retrieve the pinned FastChat
+[`llm-behavior-demos`](https://github.com/marishkamehta/llm-blog-repo/tree/main/llm-behavior-demos/). Retrieve the pinned FastChat
 files and four answer files, then place them in one input folder. Building the
 schedule does not call a model.
 
@@ -155,9 +155,9 @@ schedule does not call a model.
 > therefore downloads them from their original host. Their SHA-256 digests—a
 > digital fingerprint for each file—are checked to make sure the intended files
 > were retrieved. The details are preserved in the
-> [`material audit`](../../llm-behavior-demos/materials/position-bias/AUDIT.md).
+> [`material audit`](https://github.com/marishkamehta/llm-blog-repo/blob/main/llm-behavior-demos/materials/position-bias/AUDIT.md).
 
-From the [`llm-behavior-demos`](../../llm-behavior-demos/) folder, run:
+From the [`llm-behavior-demos`](https://github.com/marishkamehta/llm-blog-repo/tree/main/llm-behavior-demos/) folder, run:
 
 ```bash
 python -m position_bias_demo.build_schedule \
@@ -232,7 +232,7 @@ The analysis is also repeated with FastChat's original parsing rule. This is a
 **sensitivity analysis**: it checks whether using a different reasonable
 scoring decision changes the result. The implementation difference is
 documented in the
-[`material audit`](../../llm-behavior-demos/materials/position-bias/AUDIT.md).
+[`material audit`](https://github.com/marishkamehta/llm-blog-repo/blob/main/llm-behavior-demos/materials/position-bias/AUDIT.md).
 
 Run the analysis with:
 
@@ -339,12 +339,15 @@ the same underlying answer for 24 of 36 pairs, or 66.7%, in this demonstration.
 These percentages are not directly comparable because the models, questions,
 answers, and generation settings differ.
 
-The design, source record, model responses, analysis tables, and parser checks
+The code, source audit, parsed trial verdicts, analysis tables, and parser checks
 are available in
-[`llm-behavior-demos`](../../llm-behavior-demos/).
+[`llm-behavior-demos`](https://github.com/marishkamehta/llm-blog-repo/tree/main/llm-behavior-demos/).
+Raw model responses, complete prompts, and upstream candidate answers are not
+bundled. Recreating the reported results requires retrieving the pinned
+materials and collecting or obtaining the underlying responses.
 
 ---
 
 [← Previous: Choose a model setup](/blog/2026/choosing-a-backend/) ·
-[Series contents](01-controlled-experiments.md#what-this-series-covers) ·
+[Series contents](/blog/2026/controlled-experiments/#what-this-series-covers) ·
 [Next: Belief bias →](/blog/2026/belief-bias/)

@@ -78,5 +78,5 @@ Run it, and the model's reply prints to your screen.
 
 ---
 
-[Series contents](01-controlled-experiments.md#what-this-series-covers) ·
+[Series contents](/blog/2026/controlled-experiments/#what-this-series-covers) ·
 [Next: A first experiment with Silico →](/blog/2026/first-experiment/)

@@ -136,12 +136,12 @@ repaired or sent to the model again.
 ## Build and inspect the schedule before running the model
 
 The scripts and source audit are available in
-[`llm-behavior-demos`](../../llm-behavior-demos/). The NeuBAROCO materials are
+[`llm-behavior-demos`](https://github.com/marishkamehta/llm-blog-repo/tree/main/llm-behavior-demos/). The NeuBAROCO materials are
 released under CC BY 4.0 in the authors'
 [official repository](https://github.com/kmineshima/NeuBAROCO).
 
 After downloading the pinned source described in the demonstration README,
-build the complete schedule from the [`llm-behavior-demos`](../../llm-behavior-demos/)
+build the complete schedule from the [`llm-behavior-demos`](https://github.com/marishkamehta/llm-blog-repo/tree/main/llm-behavior-demos/)
 folder:
 
 ```bash
@@ -230,11 +230,14 @@ conflict, or uses the same cognitive mechanisms as a person. Explaining why
 humans and models might produce a similar pattern would require a different
 study.
 
-The frozen design, source record, model responses, analysis tables, parser
-checks, and figures are available in
-[`llm-behavior-demos`](../../llm-behavior-demos/).
+The code, source audit, aggregate analysis tables, parser checks, and figures
+are available in
+[`llm-behavior-demos`](https://github.com/marishkamehta/llm-blog-repo/tree/main/llm-behavior-demos/).
+Raw model responses and generated trial schedules are not bundled. Recreating
+the reported results requires retrieving the pinned materials, building the
+schedule, and collecting or obtaining the underlying responses.
 
 ---
 
 [← Previous: Position bias](/blog/2026/position-bias/) ·
-[Series contents](01-controlled-experiments.md#what-this-series-covers)
+[Series contents](/blog/2026/controlled-experiments/#what-this-series-covers)

@@ -10,7 +10,7 @@ _Studying LLM Behavior · Pipeline setup_
 
 Before connecting the pipeline to a local model, hosted service, or inference
 server, run it without a model. This checks that the instructions, trials,
-session history, responses, and research records move through the pipeline as
+session history, responses, and research records move through the pipeline as intended.
 
 The template does this through a **mock backend**. It follows the same route
 through the pipeline as a real model, but does not load a model or contact an
@@ -49,8 +49,8 @@ backend is connected.
 
 ## Download the pipeline template
 
-Start with the numbered release of
-[`llm-behavior-pipeline`](../../llm-behavior-pipeline/) on GitHub. Download the
+Start with the companion repository,
+[`llm-blog-repo`](https://github.com/marishkamehta/llm-blog-repo) on GitHub. Select **Code > Download ZIP** to download the
 source code as a ZIP file and unzip it somewhere you can easily find again.
 
 Before going further, make sure that Python 3.10 or later is installed. If it is
@@ -179,7 +179,7 @@ about what belongs in that history remains part of the experimental design.
 ## Run the automated checks before changing the backend
 
 Run the test suite from the
-[`llm-behavior-pipeline`](../../llm-behavior-pipeline/) folder:
+[`llm-blog-repo`](https://github.com/marishkamehta/llm-blog-repo) folder:
 
 ```bash
 python -m pytest
@@ -205,8 +205,8 @@ offline, asks the agent to report any changes, and authorizes installation only
 inside the pipeline's virtual environment.
 
 ```text
-I am working in the llm-behavior-pipeline repository. Inspect its README before
-making changes.
+I am working in the llm-blog-repo repository. Inspect its README
+before making changes.
 
 Set up a Python virtual environment inside the pipeline directory, install the
 template and its test dependencies into that environment, and run:
@@ -239,7 +239,7 @@ Dennis, D. K., & Mehta, M. M. (2026). LLM Behavioral Pipeline Template (Version 
 ---
 
 [← Previous: Choosing where the model runs](/blog/2026/choosing-a-backend/) ·
-[Series contents](01-controlled-experiments.md#what-this-series-covers)
+[Series contents](/blog/2026/controlled-experiments/#what-this-series-covers)
 
 **Choose a model setup:** [Hosted API](/blog/2026/hosted-api/) ·
 [Ollama](/blog/2026/ollama/) · [Azure](/blog/2026/azure/) · [vLLM](/blog/2026/vllm/)

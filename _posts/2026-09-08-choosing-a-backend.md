@@ -229,5 +229,5 @@ is involved.
 ---
 
 [← Previous: Experimental vocabulary](/blog/2026/experimental-vocabulary/) ·
-[Series contents](01-controlled-experiments.md#what-this-series-covers) ·
+[Series contents](/blog/2026/controlled-experiments/#what-this-series-covers) ·
 [Next: Testing the pipeline →](/blog/2026/mock-pipeline/)

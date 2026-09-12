@@ -244,5 +244,5 @@ experimental units, repeated measures, and replication.
 ---
 
 [← Previous: Why controlled experiments](/blog/) ·
-[Series contents](01-controlled-experiments.md#what-this-series-covers) ·
+[Series contents](/blog/2026/controlled-experiments/#what-this-series-covers) ·
 [Next: Experimental vocabulary →](/blog/2026/experimental-vocabulary/)

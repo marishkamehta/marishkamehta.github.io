@@ -47,6 +47,11 @@ experiments with LLMs can be and simplifying the process of getting started. It
 also aims to encourage exchange between behavioral science, neuroscience, and
 LLM research, so that insights from each can inform the others.
 
+The [companion repository](https://github.com/marishkamehta/llm-blog-repo) contains
+the code, worked demonstrations, source audits, and reviewed results for this
+series. Use its [blog-to-code guide](https://github.com/marishkamehta/llm-blog-repo/blob/main/docs/READING_MAP.md)
+to find the files for each article.
+
 ## What this series covers
 
 1. **[Quick Start Guide I: Hello LLM](/blog/2026/quick-start/)**

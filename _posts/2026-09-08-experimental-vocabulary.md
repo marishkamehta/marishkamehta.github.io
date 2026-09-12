@@ -160,7 +160,7 @@ The experiment must therefore define what counts as a valid response, how
 unexpected outputs will be handled, and whether failed or retried requests are
 included. These decisions should be made before the desired outcome is known
 and applied consistently. The pipeline's
-[`reproducibility`](../../llm-behavior-pipeline/reproducibility/) templates
+[`reproducibility`](https://github.com/marishkamehta/llm-blog-repo/tree/main/reproducibility/) templates
 provide the run, exclusion, and deviation records needed to preserve these
 decisions.
 
@@ -170,5 +170,5 @@ decision: where and how should the model run?
 ---
 
 [← Previous: Infrastructure vocabulary](/blog/2026/infrastructure-vocabulary/) ·
-[Series contents](01-controlled-experiments.md#what-this-series-covers) ·
+[Series contents](/blog/2026/controlled-experiments/#what-this-series-covers) ·
 [Next: Choosing where the model runs →](/blog/2026/choosing-a-backend/)

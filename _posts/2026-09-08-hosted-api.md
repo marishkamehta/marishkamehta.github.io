@@ -103,7 +103,7 @@ the key to confirm that it was set.
 ## Send one non-study request
 
 Return to the terminal where the
-[`llm-behavior-pipeline`](../../llm-behavior-pipeline/) environment is active.
+[`llm-blog-repo`](https://github.com/marishkamehta/llm-blog-repo) environment is active.
 The smoke test below sends “Say hello in three words.” It contains no study
 material, but the provider may count or bill the request.
 
@@ -147,7 +147,7 @@ An agent can check the configuration and run the non-study smoke test without
 being given the credential itself.
 
 ```text
-I have downloaded and tested llm-behavior-pipeline with its mock backend. I
+I have downloaded and tested llm-blog-repo with its mock backend. I
 want to connect it to [PROVIDER] through that provider's direct hosted API.
 
 Use only the provider's current official documentation. Confirm the exact API
@@ -174,6 +174,6 @@ procedure, and connect each response to the trial that produced it.
 ---
 
 [← Previous: Testing the pipeline](/blog/2026/mock-pipeline/) ·
-[Series contents](01-controlled-experiments.md#what-this-series-covers) ·
+[Series contents](/blog/2026/controlled-experiments/#what-this-series-covers) ·
 **Next:** [Position bias](/blog/2026/position-bias/) or
 [belief bias](/blog/2026/belief-bias/) →

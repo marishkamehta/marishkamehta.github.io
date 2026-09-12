@@ -216,5 +216,5 @@ record complete research metadata, and scale a demonstration responsibly.
 ---
 
 [← Previous: Hello LLM!](/blog/2026/quick-start/) ·
-[Series contents](01-controlled-experiments.md#what-this-series-covers) ·
+[Series contents](/blog/2026/controlled-experiments/#what-this-series-covers) ·
 [Next: Infrastructure terms for behavioral researchers →](/blog/2026/infrastructure-vocabulary/)
