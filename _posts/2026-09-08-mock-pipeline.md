@@ -208,19 +208,19 @@ inside the pipeline's virtual environment.
 I am working in the llm-blog-repo repository. Inspect its README
 before making changes.
 
-Set up a Python virtual environment inside the pipeline directory, install the
-template and its test dependencies into that environment, and run:
+Set up a Python virtual environment inside the pipeline directory, install
+the template and its test dependencies into that environment, and run:
 
 1. the mock smoke test;
 2. the growing-trajectory example; and
 3. the complete test suite.
 
-Do not connect to a model service, download model weights, request credentials,
-make an API call, or modify my experimental materials. If package installation
-requires internet access, tell me before proceeding. Report the commands used,
-the output of each check, and any files created or changed. If something fails,
-diagnose the failure but do not conceal it or weaken a test merely to make it
-pass.
+Do not connect to a model service, download model weights, request
+credentials, make an API call, or modify my experimental materials. If
+package installation requires internet access, tell me before proceeding.
+Report the commands used, the output of each check, and any files created
+or changed. If something fails, diagnose the failure but do not conceal it
+or weaken a test merely to make it pass.
 ```
 
 Once these checks pass, the predictable mock response can be replaced with a
@@ -232,7 +232,8 @@ To support scientific transparency and reproducibility, each public release of
 the pipeline will be archived on Zenodo and assigned a DOI.
 
 ```text
-Dennis, D. K., & Mehta, M. M. (2026). LLM Behavioral Pipeline Template (Version 0.1.0)
+Dennis, D. K., & Mehta, M. M. (2026). LLM Behavioral Pipeline Template
+(Version 0.1.0)
 [Computer software]. Zenodo. https://doi.org/DOI-ADDED-AFTER-ARCHIVING
 ```
 

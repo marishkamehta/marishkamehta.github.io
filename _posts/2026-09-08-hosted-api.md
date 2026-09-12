@@ -94,7 +94,9 @@ The same Gemini example in Windows PowerShell is:
 
 ```powershell
 $secureKey = Read-Host "API key" -AsSecureString
-$env:GEMINI_API_KEY = [System.Net.NetworkCredential]::new("", $secureKey).Password
+$env:GEMINI_API_KEY = [System.Net.NetworkCredential]::new(
+    "", $secureKey
+).Password
 ```
 
 The variable lasts for the current terminal session. There is no need to print
@@ -150,21 +152,21 @@ being given the credential itself.
 I have downloaded and tested llm-blog-repo with its mock backend. I
 want to connect it to [PROVIDER] through that provider's direct hosted API.
 
-Use only the provider's current official documentation. Confirm the exact API
-base URL, an available model identifier, supported generation settings,
-current rate limits, price or free-tier conditions, and data-use terms. Tell me
-which points I need to resolve before sending study material.
+Use only the provider's current official documentation. Confirm the exact
+API base URL, an available model identifier, supported generation settings,
+current rate limits, price or free-tier conditions, and data-use terms.
+Tell me which points I need to resolve before sending study material.
 
-Add one sanitized entry to model-registry.yaml. The entry must read the API key
-from an environment variable. Do not ask me to paste the key into chat or
-write it into a file, notebook, command history, or version control.
+Add one sanitized entry to model-registry.yaml. The entry must read the API
+key from an environment variable. Do not ask me to paste the key into chat
+or write it into a file, notebook, command history, or version control.
 
 After I have set the environment variable and explicitly authorized one
-request, run only the pipeline's non-study smoke test. Report the model name,
-endpoint, HTTP result, returned model and provider metadata, request ID, rate
-limit headers, token usage, and any unsupported settings. Do not send study
-material, create a paid resource, change an account setting, or make additional
-requests without my approval.
+request, run only the pipeline's non-study smoke test. Report the model
+name, endpoint, HTTP result, returned model and provider metadata, request
+ID, rate limit headers, token usage, and any unsupported settings. Do not
+send study material, create a paid resource, change an account setting, or
+make additional requests without my approval.
 ```
 
 A successful smoke test confirms that the pipeline can reach the model and save

@@ -199,28 +199,29 @@ The following prompt asks only for inspection and advice; it does not authorize
 installation, uploads, paid calls, or changes to the computer.
 
 ```text
-I want to run language models as participants in a behavioral experiment, but
-I am new to model infrastructure.
+I want to run language models as participants in a behavioral experiment,
+but I am new to model infrastructure.
 
 Inspect my computer and the project files I identify without changing
 anything. Compare these possible starting routes:
 
 - no-model testing through a mock backend
-- direct access to a hosted API, such as the Gemini API, Groq, or OpenRouter
+- direct access to a hosted API, such as the Gemini API, Groq,
+  or OpenRouter
 - an accessible local runner, such as Ollama or LM Studio
 - an existing managed cloud deployment, such as Azure
 - a configurable local or remote inference server, such as vLLM
 
-Consider my operating system, CPU, RAM, GPU and GPU memory, free disk space,
-expected context length, number of model calls, desired speed, budget, privacy
-requirements, and reproducibility requirements.
+Consider my operating system, CPU, RAM, GPU and GPU memory, free disk
+space, expected context length, number of model calls, desired speed,
+budget, privacy requirements, and reproducibility requirements.
 
-Recommend one starting route and one fallback. State your assumptions, explain
-unfamiliar terms in plain language, and report any commands used for
-inspection. If another locally available or institutionally supported route
-would fit better, identify it rather than forcing the choice into these four
-examples. Do not install software, alter files, expose credentials, send study
-data to an external service, or incur costs.
+Recommend one starting route and one fallback. State your assumptions,
+explain unfamiliar terms in plain language, and report any commands used
+for inspection. If another locally available or institutionally supported
+route would fit better, identify it rather than forcing the choice into
+these four examples. Do not install software, alter files, expose
+credentials, send study data to an external service, or incur costs.
 ```
 
 The next page tests the pipeline with a mock before any local or hosted model

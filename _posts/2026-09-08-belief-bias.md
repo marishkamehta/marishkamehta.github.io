@@ -111,8 +111,8 @@ the hypothesis.
 
 Answer "entailment" if the hypothesis follows logically from the premises.
 Answer "contradiction" if the premises and hypothesis are logically
-incompatible. Answer "neither" if the relationship is neither entailment nor
-contradiction.
+incompatible. Answer "neither" if the relationship is neither entailment
+nor contradiction.
 
 Premise 1: ...
 Premise 2: ...

@@ -64,6 +64,14 @@ print(response.text)
 
 Run it, and the model's reply prints to your screen.
 
+**Example output:**
+
+```text
+Hello! How can I help you today?
+```
+
+Your reply may differ; the model can generate a different response each time.
+
 ### Notes
 
 - `google-genai` is Google's official Python library for the Gemini API. We use

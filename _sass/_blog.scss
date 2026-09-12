@@ -43,6 +43,14 @@
   line-height: 1.7;
   overflow-wrap: break-word;
 
+  blockquote {
+    font-size: inherit;
+    line-height: inherit;
+    margin: 1.25rem 0;
+    padding: 0.5rem 1rem;
+    border-left-width: 3px;
+  }
+
   h2,
   h3,
   h4 {
@@ -123,6 +131,97 @@
     td:last-child {
       border-right: 0;
     }
+  }
+
+  .experiment-dialogue figcaption {
+    padding: 1rem 0 0;
+    border: 0;
+    border-top: 1px solid var(--global-divider-color);
+    background: transparent;
+    font-size: 0.9rem;
+  }
+
+  .experiment-dialogue-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .experiment-dialogue-condition {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+
+    h3 {
+      margin: 0 0 1rem;
+      font-size: 1.15rem;
+
+      span {
+        display: block;
+        margin-top: 0.35rem;
+        font-size: 0.85rem;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .experiment-message {
+    padding: 1rem;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+
+    p {
+      margin: 0 0 0.75rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .experiment-message-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+  }
+
+  .experiment-message-user {
+    flex: 1;
+    border-bottom-left-radius: 2px;
+    background: color-mix(in srgb, var(--global-bg-color) 95%, var(--global-text-color));
+  }
+
+  .experiment-message-model {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    align-self: flex-end;
+    padding: 0.5rem 0.85rem;
+    margin: 1rem 0 0 1rem;
+    border: 1px solid var(--global-divider-color);
+    border-bottom-right-radius: 2px;
+    background: var(--global-bg-color);
+
+    .experiment-message-label {
+      margin: 0;
+      font-weight: normal;
+    }
+
+    .experiment-choice {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+
+  .experiment-added-option {
+    padding-left: 0.75rem;
+    border-left: 3px solid var(--global-theme-color);
+  }
+
+  .experiment-price {
+    white-space: nowrap;
   }
 
   .table-hotel-options {
