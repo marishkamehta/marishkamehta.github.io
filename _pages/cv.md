@@ -40,10 +40,10 @@ nav_order: 5
 
 <div class="cv-download-row">
   <a href="{{ '/assets/pdf/mehta_cv.pdf' | relative_url }}" class="cv-download-pill" target="_blank" rel="noopener">
-    <i class="fa-solid fa-download"></i> Academic CV
+    <i class="fa-solid fa-download"></i> CV
   </a>
-  <a href="{{ '/assets/pdf/mehta_cv_short.pdf' | relative_url }}" class="cv-download-pill" target="_blank" rel="noopener">
-    <i class="fa-solid fa-download"></i> Short CV
+  <a href="{{ '/assets/pdf/mehta_cv_academic.pdf' | relative_url }}" class="cv-download-pill" target="_blank" rel="noopener">
+    <i class="fa-solid fa-download"></i> Academic CV
   </a>
 </div>
 
@@ -134,14 +134,18 @@ nav_order: 5
   <a href="https://github.com/marishkamehta">GitHub</a>
 </div>
 
+<h2>Research Profile</h2>
+<p>Computational psychiatry researcher studying decision-making and motivation across mental health disorders. I use reinforcement-learning and Bayesian models with behavioral, brain, and clinical data to develop reliable measures that generalize to new people and predict clinically meaningful differences. My dissertation focuses on planning and interoception; broader interests include avoidance, self-agency, outcome processing, and digital phenotyping.</p>
+
 <h2>Education</h2>
 
 <div class="entry">
   <div class="entry-head">
     <div class="entry-title">PhD, Cyber Studies <span style="font-weight:400;">(Specialization: Data Science and Psychology)</span></div>
-    <div class="entry-date">Aug 2022 – early 2027 (expected)</div>
+    <div class="entry-date">Aug 2022 – Dec 2026 (expected)</div>
   </div>
   <div class="entry-sub">The University of Tulsa</div>
+  <div class="entry-note">Advisor: Dr. Ryan Smith, Laureate Institute for Brain Research. Dissertation focus: planning and interoception in mental health disorders.</div>
 </div>
 
 <div class="entry">
@@ -206,11 +210,16 @@ nav_order: 5
 <div class="entry">
   <div class="entry-head"><div class="entry-title">Graduate Research Assistant</div><div class="entry-date">Aug 2022 – present</div></div>
   <div class="entry-sub">Laureate Institute for Brain Research, Tulsa, OK · PI: Dr. Ryan Smith</div>
+  <ul>
+    <li>Use reinforcement-learning and Bayesian models to study decision-making, motivation, and avoidance across mental health disorders.</li>
+    <li>Integrate behavioral, neuroimaging, and clinical measures to investigate planning and interoception, emphasizing reliability, generalization, and clinically meaningful prediction.</li>
+  </ul>
 </div>
 
 <div class="entry">
   <div class="entry-head"><div class="entry-title">Clinical Research Coordinator</div><div class="entry-date">Jul 2021 – Jul 2022</div></div>
   <div class="entry-sub">Depression and Anxiety Center, Icahn School of Medicine at Mount Sinai, New York, NY · PI: Dr. Laurel Morris</div>
+  <div class="entry-note">Research on reward learning, motivation, and self-agency in depression and anxiety, building on Master's thesis work in the Morris Lab.</div>
 </div>
 
 <div class="entry">
@@ -218,7 +227,7 @@ nav_order: 5
   <div class="entry-sub">New York University, New York, NY</div>
 </div>
 
-<h2>Peer-Reviewed Publications</h2>
+<h2>Peer-Reviewed Publications &amp; Book Chapters</h2>
 <p style="margin:0 0 6pt 0; font-size:10pt; color:var(--cv-muted);">Author name in <strong>bold</strong>. Numbered in reverse chronological order.</p>
 
 <div class="pub-year">2025</div>
@@ -258,7 +267,7 @@ nav_order: 5
   <li>Beltrán, J., Li, M., Jacob, Y., Butler, G., <strong>Mehta, M.</strong>, Murrough, J. W., Radulescu, A., &amp; Morris, L. S. (2025). VTA network dominance in depression confers distinct psychopathological states through blunted neural tracking of reward prediction errors. <em>Research Square</em>. <a href="https://doi.org/10.21203/rs.3.rs-7166201/v1">https://doi.org/10.21203/rs.3.rs-7166201/v1</a></li>
 </ul>
 
-<h2>Manuscripts Under Review and In Preparation</h2>
+<h2>Manuscripts in Preparation</h2>
 <ul>
   <li><strong>Mehta, M. M.</strong>, Lavalley, C. A., Chuning, A., Stewart, J. L., Huys, Q. J. M., Khalsa, S. S., Paulus, M. P., &amp; Smith, R. Neurocomputational mechanisms of cognitive avoidance during prospective planning: effects of interoceptive anxiety induction in affective disorders. <em>In preparation.</em></li>
 </ul>
@@ -305,13 +314,14 @@ nav_order: 5
 </ul>
 
 <h2>Technical Skills</h2>
-<div class="skill-row"><span class="skill-label">Computational modeling</span> · Bayesian hierarchical modeling (VBA toolbox), reinforcement learning (model-based / model-free), active inference, DCM</div>
-<div class="skill-row"><span class="skill-label">Neuroimaging</span> · 3T and 7T fMRI; fMRIPrep, FSL, SPM, AFNI, MEICA; nilearn</div>
-<div class="skill-row"><span class="skill-label">Statistics</span> · Frequentist and Bayesian statistical tests, mixed-effects models, path analysis</div>
-<div class="skill-row"><span class="skill-label">Machine learning</span> · Ensemble modeling (caretEnsemble, R), cross-validation</div>
-<div class="skill-row"><span class="skill-label">Programming</span> · Python (NumPy, pandas, scipy, matplotlib, Jupyter), R, MATLAB</div>
-<div class="skill-row"><span class="skill-label">Task design &amp; data collection</span> · PsychoPy, jsPsych, REDCap</div>
-<div class="skill-row"><span class="skill-label">Open &amp; reproducible science</span> · Preregistration (incl. published preregistered study), Git, SLURM-based HPC</div>
-<div class="skill-row"><span class="skill-label">Clinical research</span> · Structured clinical interviews, standardized symptom assessments, IRB coordination</div>
+<div class="skill-row"><span class="skill-label">Cognitive modeling</span> · Model-based/model-free reinforcement learning, active inference, DCM</div>
+<div class="skill-row"><span class="skill-label">Neuroimaging</span> · 3T/7T fMRI; fMRIPrep, FSL, SPM, AFNI, MEICA, Nilearn</div>
+<div class="skill-row"><span class="skill-label">LLM evaluation</span> · Behavioral evaluation, LLM-as-a-judge assessment, prompt ablations, evaluation task design, bias and reliability analysis, sampling-parameter sweeps</div>
+<div class="skill-row"><span class="skill-label">Statistics &amp; machine learning</span> · Bayesian hierarchical modeling (VBA), mixed-effects models, path analysis, ensemble classification (caretEnsemble), cross-validation, sensitivity analysis</div>
+<div class="skill-row"><span class="skill-label">Programming &amp; data analysis</span> · Python (NumPy, pandas, SciPy, Matplotlib, Jupyter), R, MATLAB</div>
+<div class="skill-row"><span class="skill-label">Research pipelines &amp; reproducibility</span> · Automated scoring, dataset validation, experiment tracking, data provenance, resumable collection, Git, mock-based testing, preregistration</div>
+<div class="skill-row"><span class="skill-label">Model inference &amp; research computing</span> · vLLM, hosted model APIs, SLURM-based HPC</div>
+<div class="skill-row"><span class="skill-label">Experimental methods</span> · PsychoPy, jsPsych, REDCap</div>
+<div class="skill-row"><span class="skill-label">Clinical research</span> · Structured interviews, symptom assessments, IRB coordination</div>
 
 </div>

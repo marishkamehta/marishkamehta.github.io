@@ -13,3 +13,6 @@ assets/rendercv/rendercv_output/*.typ
 Gemfile.lock
 node_modules/
 vendor
+
+# Private application CVs; not for the public website.
+/_private/
