@@ -3,7 +3,11 @@ layout: default
 permalink: /blog/
 title: Blog
 nav: true
-nav_order: 2
+nav_order: 3
+dropdown: true
+children:
+  - title: Studying LLM Behavior
+    permalink: /blog/
 pagination:
   enabled: false
 ---

@@ -117,6 +117,23 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="cvDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              CV
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="cvDropdown">
+              <a class="dropdown-item" href="{{ '/assets/pdf/mehta_cv.pdf' | relative_url }}" download>CV (short)</a>
+              <a class="dropdown-item" href="{{ '/assets/pdf/mehta_cv_academic.pdf' | relative_url }}" download>CV (long)</a>
+            </div>
+          </li>
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">
