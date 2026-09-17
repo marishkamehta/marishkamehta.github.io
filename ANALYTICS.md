@@ -25,6 +25,15 @@ This guide helps you add website analytics to track visitor statistics and behav
 
 ## Overview
 
+### GoatCounter setup for this site
+
+1. Create an account at [GoatCounter](https://www.goatcounter.com/signup) with site domain `marishkamehta.github.io`.
+2. In `_config.yml`, set `goatcounter_code` to the account name from your dashboard address (only the part before `.goatcounter.com`). Leaving it blank disables tracking.
+3. In GoatCounter settings, keep the dashboard viewable only by logged-in users.
+4. Deploy the site, visit a page, and check your GoatCounter dashboard for the pageview.
+
+The tracker loads only in production builds, on both regular pages and Distill posts. It follows the site's analytics consent setting when enabled. No password or API key belongs in the repository.
+
 Analytics help you understand your website visitors: where they come from, which pages they visit, and how they interact with your content. al-folio supports several analytics providers that you can enable in `_config.yml`.
 
 ## Supported Analytics Services
