@@ -6,6 +6,7 @@ This guide helps you add website analytics to track visitor statistics and behav
 
 - [Analytics Setup Guide](#analytics-setup-guide)
   - [Overview](#overview)
+    - [GoatCounter setup for this site](#goatcounter-setup-for-this-site)
   - [Supported Analytics Services](#supported-analytics-services)
   - [Google Analytics](#google-analytics)
     - [Setup Steps](#setup-steps)
