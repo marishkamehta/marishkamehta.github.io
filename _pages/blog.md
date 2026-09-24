@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 permalink: /blog/
 title: Blog
 nav: true
@@ -9,29 +9,47 @@ pagination:
   enabled: false
 ---
 
-Exploring LLM behavior through practical guides and controlled experiments.
+<div class="blog-index">
+  <header class="blog-index-header">
+    <h1>Studying LLM Behavior</h1>
+    <p>Practical guides and experimental demonstrations, from first steps to controlled experiments.</p>
+  </header>
 
-## Getting Started
+  <section aria-labelledby="blog-series-title">
+    <h2 class="blog-section-label" id="blog-series-title">The series</h2>
+    <a class="blog-series-card" href="{{ '/blog/getting-started/' | relative_url }}">
+      <div class="blog-series-copy">
+        <span class="blog-card-kicker">Getting Started</span>
+        <h3>Your first steps with LLM experiments</h3>
+        <p>A practical guide for behavioral researchers. Send your first message, run a small experiment, and set up the tools you need.</p>
+        <span class="blog-card-link">Explore the series <span aria-hidden="true">&rarr;</span></span>
+      </div>
+      <div class="blog-series-outline" aria-label="What the series covers">
+        <span><b>01</b> Start with a model response</span>
+        <span><b>02</b> Run your first experiment</span>
+        <span><b>03</b> Find your setup and reference guides</span>
+      </div>
+    </a>
+  </section>
 
-A series for behavioral researchers beginning to work with LLMs: send your first
-message, run a small experiment, and learn how to choose and configure a model.
-Terminology and setup references are included for when you need them.
-
-**[Explore the Getting Started series →]({{ '/blog/getting-started/' | relative_url }})**
-
----
-
-## Experimental Demonstrations
-
-Two standalone articles exploring specific questions about LLM behavior. Each
-describes the task, procedure, results, and limits of the demonstration.
-
-### [When Beliefs Bias LLM Reasoning]({{ '/blog/2026/belief-bias/' | relative_url }})
-
-Does a language model judge an argument differently when its conclusion conflicts
-with familiar beliefs? A demonstration separating logical validity from content.
-
-### [First or Second: How LLMs Judge Competing Responses]({{ '/blog/2026/position-bias/' | relative_url }})
-
-Does reversing the order of two answers change which one an LLM prefers? A
-demonstration of response-order effects in model-based judging.
+  <section class="blog-articles-section" aria-labelledby="blog-articles-title">
+    <div class="blog-section-heading">
+      <h2 id="blog-articles-title">Experimental demonstrations</h2>
+      <p>Two standalone articles. Start with either question.</p>
+    </div>
+    <div class="blog-article-grid">
+      <a class="blog-article-card" href="{{ '/blog/2026/belief-bias/' | relative_url }}">
+        <span class="blog-card-kicker">Belief bias</span>
+        <h3>When Beliefs Bias LLM Reasoning</h3>
+        <p>What happens when a logical conclusion conflicts with familiar beliefs?</p>
+        <span class="blog-card-link">Read the article <span aria-hidden="true">&rarr;</span></span>
+      </a>
+      <a class="blog-article-card" href="{{ '/blog/2026/position-bias/' | relative_url }}">
+        <span class="blog-card-kicker">Position bias</span>
+        <h3>First or Second: How LLMs Judge Competing Responses</h3>
+        <p>Does reversing two answers change which one a model prefers?</p>
+        <span class="blog-card-link">Read the article <span aria-hidden="true">&rarr;</span></span>
+      </a>
+    </div>
+  </section>
+</div>

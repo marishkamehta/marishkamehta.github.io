@@ -89,8 +89,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: "Studying LLM Behavior: Why It Matters and How to Begin" # blog_name will be displayed in your blog page
-blog_description:
+blog_name: "Studying LLM Behavior" # blog_name will be displayed in your blog page
+blog_description: "Practical guides and experimental demonstrations for behavioral researchers."
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
