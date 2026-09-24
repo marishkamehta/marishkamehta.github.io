@@ -4,7 +4,7 @@ import os
 import sys
 import yaml
 from datetime import datetime
-from scholarly import scholarly
+from scholarly import scholarly, ProxyGenerator
 
 
 def load_scholar_user_id() -> str:
@@ -34,6 +34,40 @@ def load_scholar_user_id() -> str:
 
 SCHOLAR_USER_ID: str = load_scholar_user_id()
 OUTPUT_FILE: str = "_data/citations.yml"
+
+
+def setup_proxy() -> bool:
+    """Route scholarly through a proxy so Google Scholar stops blocking CI IPs.
+
+    Uses ScraperAPI when SCRAPERAPI_KEY is set (recommended for GitHub Actions),
+    otherwise falls back to free proxies. Returns True if a proxy was engaged.
+    """
+    api_key = os.environ.get("SCRAPERAPI_KEY")
+    if api_key:
+        try:
+            pg = ProxyGenerator()
+            if pg.ScraperAPI(api_key):
+                scholarly.use_proxy(pg)
+                print("Using ScraperAPI proxy for Google Scholar requests.")
+                return True
+        except Exception:
+            # Proxy errors can contain credential-bearing URLs.
+            print("Warning: ScraperAPI setup raised an error.")
+        print("Warning: ScraperAPI setup failed; falling back to free proxies.")
+    else:
+        print("No SCRAPERAPI_KEY set; trying free proxies (less reliable).")
+
+    try:
+        pg = ProxyGenerator()
+        if pg.FreeProxies():
+            scholarly.use_proxy(pg)
+            print("Using free proxies for Google Scholar requests.")
+            return True
+    except Exception as e:
+        print(f"Warning: free proxy setup failed: {e}")
+
+    print("Warning: no proxy engaged; Google Scholar may block this request.")
+    return False
 
 
 def get_scholar_citations() -> None:
@@ -66,7 +100,8 @@ def get_scholar_citations() -> None:
 
     citation_data = {"metadata": {"last_updated": today, "summary": {}}, "papers": {}}
 
-    scholarly.set_timeout(15)
+    setup_proxy()
+    scholarly.set_timeout(30)
     scholarly.set_retries(3)
     try:
         author = scholarly.search_author_id(SCHOLAR_USER_ID)
