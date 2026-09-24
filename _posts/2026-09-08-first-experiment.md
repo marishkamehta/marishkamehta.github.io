@@ -3,6 +3,8 @@ layout: post
 title: "Quick Start Guide II: A First Experiment with Silico"
 date: 2026-09-08
 categories: llm-behavior
+series: getting-started
+related_posts: false
 description: "A first controlled behavioral experiment with an LLM using Silico."
 ---
 
@@ -296,5 +298,5 @@ record complete research metadata, and scale a demonstration responsibly.
 ---
 
 [← Previous: Hello LLM!](/blog/2026/quick-start/) ·
-[Series contents](/blog/2026/controlled-experiments/#what-this-series-covers) ·
+[Series contents](/blog/getting-started/) ·
 [Next: Infrastructure terms for behavioral researchers →](/blog/2026/infrastructure-vocabulary/)

@@ -3,10 +3,12 @@ layout: post
 title: "The Experimental Vocabulary Behind the Pipeline"
 date: 2026-09-08
 categories: llm-behavior
+series: getting-started
+related_posts: false
 description: "Core experimental-design terms for building interpretable LLM studies."
 ---
 
-_Studying LLM Behavior · Vocabulary_
+_Getting Started · Vocabulary_
 
 Generating and collecting model responses is only part of the work. Before
 those responses can be treated as data, we need to know what each one
@@ -170,5 +172,5 @@ decision: where and how should the model run?
 ---
 
 [← Previous: Infrastructure vocabulary](/blog/2026/infrastructure-vocabulary/) ·
-[Series contents](/blog/2026/controlled-experiments/#what-this-series-covers) ·
+[Series contents](/blog/getting-started/) ·
 [Next: Choosing where the model runs →](/blog/2026/choosing-a-backend/)

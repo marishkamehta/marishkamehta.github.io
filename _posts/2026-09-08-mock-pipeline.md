@@ -3,10 +3,12 @@ layout: post
 title: "Download and Test the Pipeline Without a Model"
 date: 2026-09-08
 categories: llm-behavior
+series: getting-started
+related_posts: false
 description: "How to validate an experimental pipeline before connecting a live model."
 ---
 
-_Studying LLM Behavior · Pipeline setup_
+_Getting Started · Pipeline setup_
 
 Before connecting the pipeline to a local model, hosted service, or inference
 server, run it without a model. This checks that the instructions, trials,
@@ -243,7 +245,7 @@ readers can identify the exact code version.
 ---
 
 [← Previous: Choosing where the model runs](/blog/2026/choosing-a-backend/) ·
-[Series contents](/blog/2026/controlled-experiments/#what-this-series-covers)
+[Series contents](/blog/getting-started/)
 
 **Choose a model setup:** [Hosted API](/blog/2026/hosted-api/) ·
 [Ollama](/blog/2026/ollama/) · [Azure](/blog/2026/azure/) · [vLLM](/blog/2026/vllm/)

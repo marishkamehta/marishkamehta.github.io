@@ -3,10 +3,12 @@ layout: post
 title: "The Infrastructure Terms I Needed at the Start"
 date: 2026-09-08
 categories: llm-behavior
+series: getting-started
+related_posts: false
 description: "Practical infrastructure vocabulary for researchers beginning LLM experiments."
 ---
 
-_Studying LLM Behavior · Vocabulary_
+_Getting Started · Vocabulary_
 
 The difficulty I had at the beginning was not only that the infrastructure was
 new to me. The guides I encountered used terms such as _model server_, _API_,
@@ -243,6 +245,6 @@ experimental units, repeated measures, and replication.
 
 ---
 
-[← Previous: Why controlled experiments](/blog/) ·
-[Series contents](/blog/2026/controlled-experiments/#what-this-series-covers) ·
+[← Previous: A first experiment with Silico](/blog/2026/first-experiment/) ·
+[Series contents](/blog/getting-started/) ·
 [Next: Experimental vocabulary →](/blog/2026/experimental-vocabulary/)

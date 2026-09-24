@@ -13,10 +13,19 @@ layout: default
   </style>
 {% endif %}
 
-{% if page.categories contains 'llm-behavior' %}
+{% if page.series == 'getting-started' %}
   <div class="blog-landing">
 {% endif %}
 <div class="post">
+  {% if page.categories contains 'llm-behavior' %}
+    <nav aria-label="Breadcrumb" class="mb-3">
+      <a href="{{ '/blog/' | relative_url }}">Blog</a>
+      {% if page.series == 'getting-started' %}
+        <span aria-hidden="true"> / </span>
+        <a href="{{ '/blog/getting-started/' | relative_url }}">Getting Started</a>
+      {% endif %}
+    </nav>
+  {% endif %}
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">
@@ -98,7 +107,7 @@ layout: default
     {% include giscus.liquid %}
   {% endif %}
 </div>
-{% if page.categories contains 'llm-behavior' %}
+{% if page.series == 'getting-started' %}
   {% include blog-sidebar.liquid %}
   </div>
 {% endif %}

@@ -3,6 +3,8 @@ layout: post
 title: "Quick Start Guide I: Hello LLM"
 date: 2026-09-08
 categories: llm-behavior
+series: getting-started
+related_posts: false
 description: "A practical first step for interacting with a hosted language model from Python."
 ---
 
@@ -86,5 +88,5 @@ Your reply may differ; the model can generate a different response each time.
 
 ---
 
-[Series contents](/blog/2026/controlled-experiments/#what-this-series-covers) ·
+[Series contents](/blog/getting-started/) ·
 [Next: A first experiment with Silico →](/blog/2026/first-experiment/)

@@ -3,10 +3,11 @@ layout: post
 title: "When Beliefs Bias LLM Reasoning"
 date: 2026-09-08
 categories: llm-behavior
+related_posts: false
 description: "A behavioral demonstration of belief bias in language-model reasoning."
 ---
 
-_Studying LLM Behavior · Behavioral demonstration_
+_Experimental demonstration_
 
 A conclusion can follow logically from a set of premises even when it sounds
 implausible. Conversely, a believable conclusion is not necessarily supported
@@ -239,5 +240,5 @@ schedule, and collecting or obtaining the underlying responses.
 
 ---
 
-[← Previous: Position bias](/blog/2026/position-bias/) ·
-[Series contents](/blog/2026/controlled-experiments/#what-this-series-covers)
+[← All blog articles](/blog/) ·
+[Getting Started guides](/blog/getting-started/)

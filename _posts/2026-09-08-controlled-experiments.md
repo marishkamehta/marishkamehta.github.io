@@ -3,10 +3,12 @@ layout: post
 title: "Studying LLM Behavior: Why It Matters and How to Begin"
 date: 2026-09-01
 categories: llm-behavior
+series: getting-started
+related_posts: false
 description: "An introduction to the experimental mindset behind studying how large language models behave under controlled conditions."
 ---
 
-_Studying LLM Behavior · Introduction_
+_Getting Started · Introduction_
 
 AI tools, particularly LLMs, have become part of daily life, used for both
 professional and personal tasks. Imagine asking an LLM to help decide between
@@ -56,8 +58,9 @@ to find the files for each article.
 
 1. **[Quick Start Guide I: Hello LLM](/blog/2026/quick-start/)**
 2. **[Quick Start Guide II: A First Experiment with Silico](/blog/2026/first-experiment/)**
-3. **[When Beliefs Bias LLM Reasoning](/blog/2026/belief-bias/)**
-4. **[First or Second: How LLMs Judge Competing Responses](/blog/2026/position-bias/)**
+
+The experimental demonstrations on [belief bias](/blog/2026/belief-bias/) and
+[position bias](/blog/2026/position-bias/) are separate, standalone articles.
 
 ---
 
@@ -83,5 +86,5 @@ when you are ready to configure that connection and test your experiment.
 
 ---
 
-[Series contents](#what-this-series-covers) ·
+[Series contents](/blog/getting-started/) ·
 [Next: Quick Start Guide →](/blog/2026/quick-start/)

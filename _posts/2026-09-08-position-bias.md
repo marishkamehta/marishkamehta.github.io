@@ -3,10 +3,11 @@ layout: post
 title: "First or Second: How LLMs Judge Competing Responses"
 date: 2026-09-08
 categories: llm-behavior
+related_posts: false
 description: "A behavioral demonstration of response-order effects in LLM judging."
 ---
 
-_Studying LLM Behavior · Behavioral demonstration_
+_Experimental demonstration_
 
 Language models are increasingly being used to evaluate the responses of other
 language models. The judge receives a question and two answers, then decides
@@ -26,7 +27,7 @@ while using fewer items and a different judge model.
 
 > **This is a pipeline demonstration, not a standalone benchmark study.** Its
 > purpose is to show how a published procedure can be constructed, run, and
-> recorded with the infrastructure developed in this series. The small sample
+> recorded with the infrastructure described in the [Getting Started guides](/blog/getting-started/). The small sample
 > and single judge model are not intended as a replication test, an extension
 > study, or an estimate of the prevalence or size of position effects across
 > LLMs.
@@ -189,8 +190,8 @@ python -m position_bias_demo.build_schedule \
   --comparison-files alpaca-13b.jsonl
 ```
 
-This produces 24 trials. Run them through the model route prepared earlier in
-the series:
+This produces 24 trials. Run them through a configured model connection; the
+[Getting Started guides](/blog/getting-started/) cover the available setup routes:
 
 ```bash
 python -m position_bias_demo.run_trials \
@@ -348,6 +349,5 @@ materials and collecting or obtaining the underlying responses.
 
 ---
 
-[← Previous: Choose a model setup](/blog/2026/choosing-a-backend/) ·
-[Series contents](/blog/2026/controlled-experiments/#what-this-series-covers) ·
-[Next: Belief bias →](/blog/2026/belief-bias/)
+[← All blog articles](/blog/) ·
+[Getting Started guides](/blog/getting-started/)

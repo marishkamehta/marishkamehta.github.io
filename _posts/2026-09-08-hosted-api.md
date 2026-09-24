@@ -3,10 +3,12 @@ layout: post
 title: "Connect Directly to a Hosted Model"
 date: 2026-09-08
 categories: llm-behavior
+series: getting-started
+related_posts: false
 description: "How to connect the experimental pipeline directly to a hosted model."
 ---
 
-_Studying LLM Behavior · Model setup_
+_Getting Started · Model setup_
 
 For many readers, this will be the quickest way to run the pipeline with a
 real model. No model needs to be downloaded and no server needs to be
@@ -176,6 +178,6 @@ procedure, and connect each response to the trial that produced it.
 ---
 
 [← Previous: Testing the pipeline](/blog/2026/mock-pipeline/) ·
-[Series contents](/blog/2026/controlled-experiments/#what-this-series-covers) ·
-**Next:** [Position bias](/blog/2026/position-bias/) or
-[belief bias](/blog/2026/belief-bias/) →
+[Series contents](/blog/getting-started/) ·
+**Standalone demonstrations:** [Position bias](/blog/2026/position-bias/) or
+[belief bias](/blog/2026/belief-bias/)

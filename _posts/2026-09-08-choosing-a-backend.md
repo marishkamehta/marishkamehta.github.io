@@ -3,10 +3,12 @@ layout: post
 title: "Where Should the Model Run?"
 date: 2026-09-08
 categories: llm-behavior
+series: getting-started
+related_posts: false
 description: "How to choose where an LLM runs for a behavioral experiment."
 ---
 
-_Studying LLM Behavior · Choosing infrastructure_
+_Getting Started · Choosing infrastructure_
 
 Several factors shape where an LLM experiment can run. These include the
 computing power available, cost, privacy, the number and structure of the model
@@ -230,5 +232,5 @@ is involved.
 ---
 
 [← Previous: Experimental vocabulary](/blog/2026/experimental-vocabulary/) ·
-[Series contents](/blog/2026/controlled-experiments/#what-this-series-covers) ·
+[Series contents](/blog/getting-started/) ·
 [Next: Testing the pipeline →](/blog/2026/mock-pipeline/)
