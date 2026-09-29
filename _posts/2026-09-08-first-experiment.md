@@ -1,21 +1,21 @@
 ---
 layout: post
-title: "Quick Start Guide II: A First Experiment with Silico"
+title: "Testing the Decoy Effect in an LLM"
 date: 2026-09-08
 categories: llm-behavior
 series: getting-started
 related_posts: false
-description: "A first controlled behavioral experiment with an LLM using Silico."
+description: "A worked example using Silico to test whether adding a decoy changes an LLM's choices."
 ---
 
-In [Quick Start Guide I](/blog/2026/quick-start/), you created an API key in
+In [Quick Start Guide: Hello LLM!](/blog/2026/quick-start/), you created an API key in
 Google AI Studio and used it to send a message to a model on the free tier.
 Now you will reuse that key to run a small behavioral experiment with
-[Silico](SILICO_REPOSITORY_URL), a Python library for behavioral experiments
+[Silico](https://github.com/marishkamehta/silico), a Python library for behavioral experiments
 with LLMs. Silico provides a common interface for hosted and self-hosted models
 and helps you organize their responses for analysis.
 
-You will ask the model to choose between two hotels, then add a third hotel
+In this worked example, you will ask the model to choose between two hotels, then add a third hotel
 while keeping the original options and instructions unchanged. By recording
 the model's choices across repeated requests in both conditions, you can
 explore whether the added option changes its choices. This is a simple example
@@ -79,9 +79,9 @@ that a language model and a person make choices through the same mechanisms.
 Clone the repository, create a virtual environment, and install the package:
 
 ```bash
-git clone SILICO_REPOSITORY_URL
-cd llm-behavior
-python -m venv .venv --prompt llm-behavior
+git clone https://github.com/marishkamehta/silico
+cd silico
+python -m venv .venv --prompt silico
 source .venv/bin/activate
 pip install -e .
 ```
@@ -96,27 +96,21 @@ gemini-flash:
   key_env: GEMINI_API_KEY
 ```
 
-This reuses the `GEMINI_API_KEY` environment variable from Quick Start I. The
+This reuses the `GEMINI_API_KEY` environment variable from the quick start guide. The
 registry reads the key from the environment, so it does not appear in your code
 or configuration file.
 
 ## Run the experiment
 
-Create a file named `decoy_experiment.py` at the project root:
+The core experiment uses two prompts. The control offers hotels A and B;
+the decoy condition adds hotel C while keeping everything else the same.
 
 ```python
-import csv
-import time
-from collections import Counter
-from pathlib import Path
-
-import requests
 from silico.registry import make_llm
-
 
 llm = make_llm("gemini-flash")
 
-COMMON = (
+CONTROL_PROMPT = (
     "You are booking a hotel for one night. "
     "The hotels differ only in guest rating and price. "
     "Choose one hotel. Reply with only its letter.\n\n"
@@ -125,90 +119,27 @@ COMMON = (
 )
 
 PROMPTS = {
-    "control": COMMON,
-    "decoy": COMMON + "\nC: Guest rating 8.3 out of 10; price $235.",
+    "control": CONTROL_PROMPT,
+    "decoy": CONTROL_PROMPT + "\nC: Guest rating 8.3 out of 10; price $235.",
 }
-SCHEDULE = ["control", "decoy"] * 5
-RESULTS = Path("decoy_results.csv")
 
-# Resume after the last complete row if an earlier run was interrupted.
-completed = 0
-if RESULTS.exists():
-    with RESULTS.open(newline="", encoding="utf-8") as existing_file:
-        completed = sum(1 for _ in csv.DictReader(existing_file))
-
-mode = "a" if completed else "w"
-with RESULTS.open(mode, newline="", encoding="utf-8") as output:
-    writer = csv.DictWriter(
-        output,
-        fieldnames=[
-            "observation",
-            "condition",
-            "prompt",
-            "raw_response",
-            "choice",
-        ],
-    )
-    if not completed:
-        writer.writeheader()
-
-    pending = list(enumerate(SCHEDULE, start=1))[completed:]
-    for observation, condition in pending:
-        for attempt in range(1, 4):
-            try:
-                raw_response = llm.respond(PROMPTS[condition])
-                break
-            except (requests.ReadTimeout, requests.HTTPError) as error:
-                retryable = isinstance(error, requests.ReadTimeout) or (
-                    error.response.status_code == 503
-                )
-                if not retryable or attempt == 3:
-                    raise
-                wait_seconds = 15 * attempt
-                print(
-                    f"Temporary error; retrying in {wait_seconds} seconds."
-                )
-                time.sleep(wait_seconds)
-
-        normalized = raw_response.strip().upper()
-        choice = normalized if normalized in {"A", "B", "C"} else "INVALID"
-        writer.writerow(
-            {
-                "observation": observation,
-                "condition": condition,
-                "prompt": PROMPTS[condition],
-                "raw_response": raw_response,
-                "choice": choice,
-            }
-        )
-        output.flush()
-        print(condition, choice)
-
-with RESULTS.open(newline="", encoding="utf-8") as results_file:
-    rows = list(csv.DictReader(results_file))
-
-print("\nSummary")
-for condition in PROMPTS:
-    counts = Counter(
-        row["choice"] for row in rows if row["condition"] == condition
-    )
-    print(condition, dict(counts))
+# Alternate conditions, making five requests for each.
+for condition in ["control", "decoy"] * 5:
+    raw_response = llm.respond(PROMPTS[condition])
+    normalized = raw_response.strip().upper()
+    choice = normalized if normalized in {"A", "B", "C"} else "INVALID"
+    print(condition, choice)
 ```
 
-Run it from the activated environment:
+Each request prints the condition and the model's choice. Compare how often
+it chooses A with and without the decoy. Responses other than a single A, B,
+or C are marked `INVALID`.
 
-```bash
-python decoy_experiment.py
-```
-
-The complete experiment makes ten successful requests: five in each condition.
-It writes every prompt, raw response, and parsed choice to
-`decoy_results.csv`, flushing the file after each observation. If a timeout or
-temporary service error interrupts the run, start the script again; it reads
-the existing rows and resumes at the next observation.
-
-Check your current Gemini limits before running it. If the API reports a rate
-limit, wait for the period shown in the error message before trying again.
+For the complete runnable version, use the
+[decoy experiment script](https://github.com/marishkamehta/llm-behavior-experiments/blob/main/examples/decoy_experiment.py).
+It also saves prompts and responses to `decoy_results.csv`, summarizes the
+choices, retries timeouts and temporary service errors, and resumes an
+interrupted run from its saved results.
 
 ## What the model sees and replies
 

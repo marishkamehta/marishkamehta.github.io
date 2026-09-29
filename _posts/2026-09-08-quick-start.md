@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Quick Start Guide I: Hello LLM"
+title: "Quick Start Guide: Hello LLM!"
 date: 2026-09-08
 categories: llm-behavior
 series: getting-started

@@ -2,7 +2,6 @@
 layout: about
 title: About
 permalink: /
-subtitle: PhD Candidate in Computational Psychiatry · <a href="https://www.laureateinstitute.org/" target="_blank">Laureate Institute for Brain Research</a>
 
 profile:
   align: right
@@ -19,7 +18,7 @@ social: true
 announcements:
   enabled: true
   scrollable: true
-  limit: 3
+  limit: 5
 
 latest_posts:
   enabled: false
@@ -27,11 +26,14 @@ latest_posts:
 
 I am a PhD candidate in computational psychiatry at the [Laureate Institute for Brain Research](https://www.laureateinstitute.org/), advised by [Dr. Ryan Smith](https://www.laureateinstitute.org/ryan-smith.html). I expect to complete my PhD in **December 2026**.
 
-My research centers on understanding and quantifying behavior when the underlying cognitive processes cannot be observed directly. I draw on reinforcement learning and Bayesian accounts of cognition to connect theories of uncertainty, avoidance, and reward sensitivity with behavioral and neural evidence. Within this framework, my dissertation examines planning and interoception—how we perceive internal bodily signals. Across this work, I focus on measures that are reliable, generalize to new people, and capture clinically meaningful predictive utility.
+I use computational models to study cognition and behavior across mental health conditions. My research asks:
 
-More recently, using AI tools has led me to extend this interest in behavior to LLMs: how their responses change across tasks and conditions, and how consistently they reason and evaluate information. In my blog, [Studying LLM Behavior]({{ '/blog/' | relative_url }}), I explore these questions from a behavioral-science perspective. The [Getting Started series]({{ '/blog/getting-started/' | relative_url }}) helps researchers design and run their first LLM experiments.
+- How do depression and anxiety shape how people [weigh risks and rewards](https://doi.org/10.5334/cpsy.131)?
+- How do people [learn from experience](https://doi.org/10.1016/j.drugalcdep.2025.112922) and [plan ahead](https://doi.org/10.1038/s41398-025-03390-8)?
+- How does [interoception](https://doi.org/10.1007/7854_2024_572), our sense of internal bodily signals, shape cognition and behavior?
+- How do [brain structure](https://doi.org/10.1016/j.neuroimage.2022.119704) and [activity](https://www.researchsquare.com/article/rs-7166201/v1) relate to cognition and behavior, and could they help predict mental health outcomes?
 
-Two standalone experimental demonstrations put these methods into practice. [When Beliefs Bias LLM Reasoning]({{ '/blog/2026/belief-bias/' | relative_url }}) asks whether a model's logical judgments change when conclusions conflict with familiar beliefs. [First or Second: How LLMs Judge Competing Responses]({{ '/blog/2026/position-bias/' | relative_url }}) tests whether reversing the order of two answers changes which one a model prefers. Each article walks through the task, procedure, results, and limitations, with accompanying code.
+This interest in behavior also informs my experiments with large language models (LLMs), where I test how [available options]({% post_url 2026-09-08-first-experiment %}), [familiar beliefs]({% post_url 2026-09-08-belief-bias %}), and [answer order]({% post_url 2026-09-08-position-bias %}) influence their responses. I write about this work in [Studying LLM Behavior]({{ '/blog/' | relative_url }}), alongside [guides for getting started]({{ '/blog/getting-started/' | relative_url }}).
 
 My approach draws on training in biomedical science at Queen Mary University of London, neuroscience through [Neurasmus](https://www.neurasmus.u-bordeaux.fr) at Bordeaux and Laval, and psychology at NYU. Before my PhD, I conducted my NYU thesis with [Dr. Laurel Morris](https://www.psy.ox.ac.uk/people/laurel-morris) at Mount Sinai, where I later worked as a Clinical Research Coordinator.
 

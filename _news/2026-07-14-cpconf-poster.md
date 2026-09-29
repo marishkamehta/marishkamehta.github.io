@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-_Prospective Out-of-Sample Prediction of Affective Symptom Change Using Cardiac Interoceptive Precision Estimates_. [Computational Psychiatry Conference](https://www.cpconf.org/), 14–16 July 2026. _Travel Award_.
+Received a travel award to present my poster on cardiac interoception and affective symptom change at the [Computational Psychiatry Conference](https://www.cpconf.org/).

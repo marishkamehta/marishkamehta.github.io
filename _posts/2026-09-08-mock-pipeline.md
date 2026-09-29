@@ -8,8 +8,6 @@ related_posts: false
 description: "How to validate an experimental pipeline before connecting a live model."
 ---
 
-_Getting Started · Pipeline setup_
-
 Before connecting the pipeline to a local model, hosted service, or inference
 server, run it without a model. This checks that the instructions, trials,
 session history, responses, and research records move through the pipeline as intended.
@@ -52,7 +50,7 @@ backend is connected.
 ## Download the pipeline template
 
 Start with the companion repository,
-[`llm-blog-repo`](https://github.com/marishkamehta/llm-blog-repo) on GitHub. Select **Code > Download ZIP** to download the
+[`silico`](https://github.com/marishkamehta/silico) on GitHub. Select **Code > Download ZIP** to download the
 source code as a ZIP file and unzip it somewhere you can easily find again.
 
 Before going further, make sure that Python 3.10 or later is installed. If it is
@@ -181,7 +179,7 @@ about what belongs in that history remains part of the experimental design.
 ## Run the automated checks before changing the backend
 
 Run the test suite from the
-[`llm-blog-repo`](https://github.com/marishkamehta/llm-blog-repo) folder:
+[`silico`](https://github.com/marishkamehta/silico) folder:
 
 ```bash
 python -m pytest
@@ -207,7 +205,7 @@ offline, asks the agent to report any changes, and authorizes installation only
 inside the pipeline's virtual environment.
 
 ```text
-I am working in the llm-blog-repo repository. Inspect its README
+I am working in the silico repository. Inspect its README
 before making changes.
 
 Set up a Python virtual environment inside the pipeline directory, install
@@ -231,12 +229,12 @@ response from a real model without changing the task logic.
 ## Citation
 
 If you use the pipeline, cite the software using the metadata in the
-repository's [CITATION.cff](https://github.com/marishkamehta/llm-blog-repo/blob/main/CITATION.cff):
+repository's [CITATION.cff](https://github.com/marishkamehta/silico/blob/main/CITATION.cff):
 
 ```text
-Dennis, D. K., & Mehta, M. M. (2026). LLM Behavioral Pipeline Template
+Dennis, D. K., & Mehta, M. M. (2026). Silico
 (Version 0.1.0) [Computer software]. GitHub.
-https://github.com/marishkamehta/llm-blog-repo
+https://github.com/marishkamehta/silico
 ```
 
 Record the Git commit hash used for your study alongside this citation so that

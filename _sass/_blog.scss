@@ -8,7 +8,7 @@
 }
 
 .blog-index-header {
-  margin-bottom: 2.75rem;
+  margin-bottom: 1.75rem;
 }
 
 .blog-index-header h1 {
@@ -113,7 +113,11 @@
 }
 
 .blog-articles-section {
-  margin-top: 3rem;
+  margin-top: 0;
+}
+
+.blog-articles-section + .blog-articles-section {
+  margin-top: 2.75rem;
 }
 
 .blog-section-heading h2 {
@@ -128,30 +132,63 @@
 
 .blog-article-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  grid-auto-rows: 1fr;
+  gap: 1rem;
 }
 
 .blog-article-card {
   display: flex;
   flex-direction: column;
-  padding: 1.75rem;
+  padding: 1.45rem;
   background: var(--global-card-bg-color);
 }
 
-.blog-article-card h3 {
-  margin: 0.85rem 0;
+.blog-article-card h2 {
+  margin: 0 0 1rem;
   font-size: 1.4rem;
   line-height: 1.35;
+
+  a {
+    color: var(--global-text-color);
+
+    &:hover,
+    &:focus-visible {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+.blog-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  margin: auto 0 1.25rem;
+  padding: 0;
+
+  a {
+    display: inline-block;
+    padding: 0.2rem 0.55rem;
+    border-radius: 0.3rem;
+    background: var(--news-badge-bg-color);
+    color: var(--news-badge-text-color);
+    font-size: 0.75rem;
+    line-height: 1.5;
+
+    &:hover,
+    &:focus-visible {
+      text-decoration: underline;
+    }
+  }
 }
 
 .blog-article-card .blog-card-link {
-  margin-top: auto;
+  margin-top: 0;
 }
 
 @media (max-width: 640px) {
-  .blog-series-card,
-  .blog-article-grid {
+  .blog-series-card {
     grid-template-columns: minmax(0, 1fr);
   }
 
@@ -205,6 +242,28 @@
 .post-title {
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
+  }
+}
+
+.post .article-header {
+  margin-bottom: 1.75rem;
+
+  .post-title {
+    margin-bottom: 0.65rem;
+  }
+
+  .post-meta {
+    margin: 0;
+    padding-top: 0;
+  }
+
+  .blog-card-tags {
+    margin: 0.85rem 0 0;
+  }
+
+  .post-tags {
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 

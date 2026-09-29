@@ -1,18 +1,19 @@
 ---
 layout: post
-title: "First or Second: How LLMs Judge Competing Responses"
+title: "Can Response Position Bias LLM Judgments?"
 date: 2026-09-08
 categories: llm-behavior
+tags: [behavioural-science, llms, evaluation]
+card_title: Can Response Position Bias LLM Judgments?
+card_description: "When a language model compares two answers, does it prefer the better answer or simply the one shown first?"
 related_posts: false
 description: "A behavioral demonstration of response-order effects in LLM judging."
 ---
 
-_Experimental demonstration_
-
 Language models are increasingly being used to evaluate the responses of other
 language models. The judge receives a question and two answers, then decides
 which answer is better. This makes large evaluations easier to run, but it also
-
+raises a question: would the judge choose the same answer if the two
 answers appeared in the opposite order?
 
 Shi et al. studied this question across several judge models and tasks. They
@@ -27,7 +28,7 @@ while using fewer items and a different judge model.
 
 > **This is a pipeline demonstration, not a standalone benchmark study.** Its
 > purpose is to show how a published procedure can be constructed, run, and
-> recorded with the infrastructure described in the [Getting Started guides](/blog/getting-started/). The small sample
+> recorded with the infrastructure described in the [LLM experiment guides](/blog/getting-started/). The small sample
 > and single judge model are not intended as a replication test, an extension
 > study, or an estimate of the prevalence or size of position effects across
 > LLMs.
@@ -146,7 +147,7 @@ prompts also fit within the configured context window.
 ## Build the schedule before sending any requests
 
 The demonstration code and material instructions are in
-[`llm-behavior-demos`](https://github.com/marishkamehta/llm-blog-repo/tree/main/llm-behavior-demos/). Retrieve the pinned FastChat
+[`llm-behavior-experiments`](https://github.com/marishkamehta/llm-behavior-experiments). Retrieve the pinned FastChat
 files and four answer files, then place them in one input folder. Building the
 schedule does not call a model.
 
@@ -156,9 +157,9 @@ schedule does not call a model.
 > therefore downloads them from their original host. Their SHA-256 digests—a
 > digital fingerprint for each file—are checked to make sure the intended files
 > were retrieved. The details are preserved in the
-> [`material audit`](https://github.com/marishkamehta/llm-blog-repo/blob/main/llm-behavior-demos/materials/position-bias/AUDIT.md).
+> [`material audit`](https://github.com/marishkamehta/llm-behavior-experiments/blob/main/materials/position-bias/AUDIT.md).
 
-From the [`llm-behavior-demos`](https://github.com/marishkamehta/llm-blog-repo/tree/main/llm-behavior-demos/) folder, run:
+From the [`llm-behavior-experiments`](https://github.com/marishkamehta/llm-behavior-experiments) folder, run:
 
 ```bash
 python -m position_bias_demo.build_schedule \
@@ -191,7 +192,7 @@ python -m position_bias_demo.build_schedule \
 ```
 
 This produces 24 trials. Run them through a configured model connection; the
-[Getting Started guides](/blog/getting-started/) cover the available setup routes:
+[LLM experiment guides](/blog/getting-started/) cover the available setup routes:
 
 ```bash
 python -m position_bias_demo.run_trials \
@@ -233,7 +234,7 @@ The analysis is also repeated with FastChat's original parsing rule. This is a
 **sensitivity analysis**: it checks whether using a different reasonable
 scoring decision changes the result. The implementation difference is
 documented in the
-[`material audit`](https://github.com/marishkamehta/llm-blog-repo/blob/main/llm-behavior-demos/materials/position-bias/AUDIT.md).
+[`material audit`](https://github.com/marishkamehta/llm-behavior-experiments/blob/main/materials/position-bias/AUDIT.md).
 
 Run the analysis with:
 
@@ -342,7 +343,7 @@ answers, and generation settings differ.
 
 The code, source audit, parsed trial verdicts, analysis tables, and parser checks
 are available in
-[`llm-behavior-demos`](https://github.com/marishkamehta/llm-blog-repo/tree/main/llm-behavior-demos/).
+[`llm-behavior-experiments`](https://github.com/marishkamehta/llm-behavior-experiments).
 Raw model responses, complete prompts, and upstream candidate answers are not
 bundled. Recreating the reported results requires retrieving the pinned
 materials and collecting or obtaining the underlying responses.
@@ -350,4 +351,4 @@ materials and collecting or obtaining the underlying responses.
 ---
 
 [← All blog articles](/blog/) ·
-[Getting Started guides](/blog/getting-started/)
+[LLM experiment guides](/blog/getting-started/)

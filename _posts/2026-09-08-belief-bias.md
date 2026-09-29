@@ -3,36 +3,38 @@ layout: post
 title: "When Beliefs Bias LLM Reasoning"
 date: 2026-09-08
 categories: llm-behavior
+tags: [behavioural-science, llms, reasoning]
+card_title: When Beliefs Bias LLM Reasoning
+card_description: "Can a model follow an argument's logic when its conclusion sounds wrong? I test whether familiar beliefs get in the way."
 related_posts: false
 description: "A behavioral demonstration of belief bias in language-model reasoning."
 ---
 
-_Experimental demonstration_
-
-A conclusion can follow logically from a set of premises even when it sounds
-implausible. Conversely, a believable conclusion is not necessarily supported
-by the premises. People often find it harder to judge an argument by its logic
-
-this is known as **belief bias**
+When we judge an argument, what we already believe can get in the way. We may
+accept a conclusion because it sounds true, or reject it because it sounds
+false, instead of checking whether it follows from the information given.
+This tendency is called **belief bias**
 ([Evans, Barston, & Pollard, 1983](https://doi.org/10.3758/BF03196976)).
+Here, I explore whether an LLM shows a similar pattern.
 
-Syllogistic reasoning offers a simple way to study this pattern in a language
-model. The logical task stays the same while the content is consistent with
-ordinary belief, inconsistent with it, or entirely symbolic. Each problem also
-has a predetermined correct answer, so the model's responses can be scored
-automatically.
+To test this, I give the model a few statements and ask whether a conclusion
+follows from them. Some problems use familiar facts, others conflict with
+everyday knowledge, and others use abstract letters such as A, B, and C. Each
+has a known correct answer, allowing me to check whether the model's accuracy
+changes with the content.
 
-The demonstration uses **NeuBAROCO**, a published dataset developed from
-materials used to study human syllogistic reasoning and adapted for evaluating
-language models. The dataset includes English and Japanese problems, their
-correct logical classifications, and annotations for several reasoning biases
+The problems come from **NeuBAROCO**, a published collection adapted from
+reasoning tasks used in human research. It contains English and Japanese
+problems, the correct answers, and labels that help researchers study different
+reasoning biases
 ([Ando et al., 2023](https://aclanthology.org/2023.naloma-1.1/);
 [Ozeki et al., 2024](https://aclanthology.org/2024.findings-acl.950/)).
 
-> **This is a pipeline demonstration.** It applies a published task to a new
-> model and adds repeated responses across temperature settings. It is not
-> intended to establish a new cognitive account or to show that a language
-> model and a person arrive at an answer through the same process.
+> **This is a worked example of an LLM experiment.** I use a published task
+> with a different model and repeat the questions at several response settings.
+> The aim is to show how to run and examine the experiment. Similar answers
+> from a model and a person would not, by themselves, show that they reason
+> in the same way.
 
 ## The task separates logic from familiar content
 
@@ -137,12 +139,12 @@ repaired or sent to the model again.
 ## Build and inspect the schedule before running the model
 
 The scripts and source audit are available in
-[`llm-behavior-demos`](https://github.com/marishkamehta/llm-blog-repo/tree/main/llm-behavior-demos/). The NeuBAROCO materials are
+[`llm-behavior-experiments`](https://github.com/marishkamehta/llm-behavior-experiments). The NeuBAROCO materials are
 released under CC BY 4.0 in the authors'
 [official repository](https://github.com/kmineshima/NeuBAROCO).
 
 After downloading the pinned source described in the demonstration README,
-build the complete schedule from the [`llm-behavior-demos`](https://github.com/marishkamehta/llm-blog-repo/tree/main/llm-behavior-demos/)
+build the complete schedule from the [`llm-behavior-experiments`](https://github.com/marishkamehta/llm-behavior-experiments)
 folder:
 
 ```bash
@@ -233,7 +235,7 @@ study.
 
 The code, source audit, aggregate analysis tables, parser checks, and figures
 are available in
-[`llm-behavior-demos`](https://github.com/marishkamehta/llm-blog-repo/tree/main/llm-behavior-demos/).
+[`llm-behavior-experiments`](https://github.com/marishkamehta/llm-behavior-experiments).
 Raw model responses and generated trial schedules are not bundled. Recreating
 the reported results requires retrieving the pinned materials, building the
 schedule, and collecting or obtaining the underlying responses.
@@ -241,4 +243,4 @@ schedule, and collecting or obtaining the underlying responses.
 ---
 
 [← All blog articles](/blog/) ·
-[Getting Started guides](/blog/getting-started/)
+[LLM experiment guides](/blog/getting-started/)

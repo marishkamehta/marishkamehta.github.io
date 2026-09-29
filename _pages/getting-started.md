@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /blog/getting-started/
-title: Getting Started
+title: LLM experiments
 description: "A practical series for behavioral researchers starting experiments with LLMs."
 ---
 
@@ -13,9 +13,9 @@ steps you can turn to as needed.
 
 ## Start here
 
-1. [Studying LLM Behavior: Why It Matters and How to Begin]({{ '/blog/2026/controlled-experiments/' | relative_url }})
-2. [Quick Start Guide I: Hello LLM]({{ '/blog/2026/quick-start/' | relative_url }})
-3. [Quick Start Guide II: A First Experiment with Silico]({{ '/blog/2026/first-experiment/' | relative_url }})
+1. [Studying LLM Behavior: Why It Matters and Where to Begin]({{ '/blog/2026/controlled-experiments/' | relative_url }})
+2. [Quick Start Guide: Hello LLM!]({{ '/blog/2026/quick-start/' | relative_url }})
+3. [Testing the Decoy Effect in an LLM]({{ '/blog/2026/first-experiment/' | relative_url }})
 
 ## Terminology and model hosting
 

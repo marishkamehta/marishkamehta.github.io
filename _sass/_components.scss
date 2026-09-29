@@ -2,6 +2,65 @@
  * Reusable component styles: Cards, captions, profiles, etc.
  ******************************************************************************/
 
+// Updates
+
+.news .updates-list {
+  list-style: none;
+  margin: 0 0 2rem;
+  padding: 0;
+}
+
+.news .update-item {
+  display: grid;
+  grid-template-columns: 8.5rem minmax(0, 1fr);
+  gap: 1.25rem;
+  padding: 1rem 0;
+
+  &:first-child {
+    padding-top: 0.5rem;
+  }
+}
+
+.news .update-date {
+  padding-top: 0.15rem;
+  color: var(--global-text-color-light);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.news .update-content {
+  line-height: 1.6;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: var(--global-text-color);
+    text-decoration: underline;
+    text-decoration-color: var(--global-divider-color);
+    text-underline-offset: 0.2em;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--global-theme-color);
+      text-decoration-color: currentColor;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .news .update-item {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.25rem;
+  }
+
+  .news .update-date {
+    padding-top: 0;
+  }
+}
+
 // News / updates badges
 
 .news-badge {

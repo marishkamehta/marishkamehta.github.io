@@ -171,6 +171,8 @@ kramdown:
 # Includes & excludes
 include: ["_pages", "_scripts", ".nojekyll"]
 exclude:
+  - assets/pdf/mehta_cv.pdf
+  - assets/pdf/mehta_cv_short.pdf
   # Compile main.scss; do not let the standalone CSS override the site theme.
   - assets/css/main.css
   - assets/img/blog/README.md

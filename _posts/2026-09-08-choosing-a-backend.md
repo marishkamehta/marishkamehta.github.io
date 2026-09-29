@@ -8,8 +8,6 @@ related_posts: false
 description: "How to choose where an LLM runs for a behavioral experiment."
 ---
 
-_Getting Started · Choosing infrastructure_
-
 Several factors shape where an LLM experiment can run. These include the
 computing power available, cost, privacy, the number and structure of the model
 calls, and the degree of control required by the study.

@@ -8,11 +8,10 @@ related_posts: false
 description: "How to connect the experimental pipeline directly to a hosted model."
 ---
 
-_Getting Started · Model setup_
-
 For many readers, this will be the quickest way to run the pipeline with a
 real model. No model needs to be downloaded and no server needs to be
 maintained. The setup requires an account, an API key, an available model, and
+the provider's API endpoint.
 
 This route is easier to set up than a local model, but the requests leave the
 computer and the provider controls the environment in which the model runs.
@@ -107,7 +106,7 @@ the key to confirm that it was set.
 ## Send one non-study request
 
 Return to the terminal where the
-[`llm-blog-repo`](https://github.com/marishkamehta/llm-blog-repo) environment is active.
+[`silico`](https://github.com/marishkamehta/silico) environment is active.
 The smoke test below sends “Say hello in three words.” It contains no study
 material, but the provider may count or bill the request.
 
@@ -151,7 +150,7 @@ An agent can check the configuration and run the non-study smoke test without
 being given the credential itself.
 
 ```text
-I have downloaded and tested llm-blog-repo with its mock backend. I
+I have downloaded and tested silico with its mock backend. I
 want to connect it to [PROVIDER] through that provider's direct hosted API.
 
 Use only the provider's current official documentation. Confirm the exact

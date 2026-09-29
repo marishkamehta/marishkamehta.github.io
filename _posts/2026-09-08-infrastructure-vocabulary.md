@@ -8,8 +8,6 @@ related_posts: false
 description: "Practical infrastructure vocabulary for researchers beginning LLM experiments."
 ---
 
-_Getting Started · Vocabulary_
-
 The difficulty I had at the beginning was not only that the infrastructure was
 new to me. The guides I encountered used terms such as _model server_, _API_,
 _endpoint_, and _context window_ before I knew why I needed any of them.
@@ -26,8 +24,8 @@ it here.
 
 {% include figure.liquid
   path="assets/img/blog/infrastructure-layers.svg"
-  alt="A chat product and an experimental client both communicate through a request interface, which connects to a backend, a specific model revision, and computing hardware."
-  caption="Figure 1. Names that are often used interchangeably refer to different layers. A reproducible experiment records the route from its client and request format through the backend, model revision, and compute environment."
+  alt="Three related aspects of a model setup to document: requests, model configuration, and hosting and hardware. These are not sequential steps."
+  caption="Figure 1. Document requests, model configuration, and hosting and hardware, noting any details the provider does not disclose. These records support reproducibility alongside the experimental procedure and data."
   loading="lazy"
 %}
 
@@ -245,6 +243,6 @@ experimental units, repeated measures, and replication.
 
 ---
 
-[← Previous: A first experiment with Silico](/blog/2026/first-experiment/) ·
+[← Previous: Testing the Decoy Effect in an LLM](/blog/2026/first-experiment/) ·
 [Series contents](/blog/getting-started/) ·
 [Next: Experimental vocabulary →](/blog/2026/experimental-vocabulary/)

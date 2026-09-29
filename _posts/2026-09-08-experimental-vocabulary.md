@@ -8,8 +8,6 @@ related_posts: false
 description: "Core experimental-design terms for building interpretable LLM studies."
 ---
 
-_Getting Started · Vocabulary_
-
 Generating and collecting model responses is only part of the work. Before
 those responses can be treated as data, we need to know what each one
 represents and which conclusions the study can support.
@@ -162,7 +160,7 @@ The experiment must therefore define what counts as a valid response, how
 unexpected outputs will be handled, and whether failed or retried requests are
 included. These decisions should be made before the desired outcome is known
 and applied consistently. The pipeline's
-[`reproducibility`](https://github.com/marishkamehta/llm-blog-repo/tree/main/reproducibility/) templates
+[`reproducibility`](https://github.com/marishkamehta/llm-behavior-experiments/tree/main/reproducibility/) templates
 provide the run, exclusion, and deviation records needed to preserve these
 decisions.
 

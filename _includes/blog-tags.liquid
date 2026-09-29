@@ -1,0 +1,11 @@
+{% if include.tags.size > 0 %}
+  <ul class="blog-card-tags" aria-label="Tags">
+    {% for tag in include.tags %}
+      <li>
+        <a href="{{ tag | slugify | prepend: '/blog/tag/' | append: '/' | relative_url }}">
+          {{- tag | replace: '-', ' ' | capitalize | replace: 'Llms', 'LLMs' -}}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

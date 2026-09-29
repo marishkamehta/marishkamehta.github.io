@@ -1,22 +1,23 @@
 ---
 layout: post
-title: "Studying LLM Behavior: Why It Matters and How to Begin"
+title: "Studying LLM Behavior: Why It Matters and Where to Begin"
 date: 2026-09-01
 categories: llm-behavior
+tags: [behavioural-science, llms, getting-started]
+card_description: "New to language models? Learn how to ask a research question, run a simple experiment, and understand the responses."
 series: getting-started
 related_posts: false
 description: "An introduction to the experimental mindset behind studying how large language models behave under controlled conditions."
 ---
 
-_Getting Started · Introduction_
+This series is for behavioral researchers interested in studying how large
+language models (LLMs) respond to different tasks and how those responses change
+with the information provided. The guides show how to apply methods from
+behavioral research to LLMs, from designing a simple experiment to interpreting
+the model's responses. I also explain the technical concepts I had to learn
+along the way, so that readers new to working with LLMs have a place to begin.
 
-AI tools, particularly LLMs, have become part of daily life, used for both
-professional and personal tasks. Imagine asking an LLM to help decide between
-a beach holiday and a city break. It might favor the beach, only to recommend
-the city when the options are reversed, even though the plans themselves have
-not changed.
-
-An interaction like this raises bigger questions. How stable are an LLM's
+How stable are an LLM's
 preferences? Does the order of information influence its choices? Can an
 earlier exchange affect a later response? These questions connect everyday
 experiences with ideas studied across psychology, behavioral science,
@@ -44,20 +45,15 @@ had to familiarize myself with terms such as _model server_, _API_, _container_,
 and _GPU memory_. It turns out that getting started can be much simpler. You can
 get quite far with just a laptop and an internet connection.
 
-This blog series aims to bridge that gap by showing how accessible behavioral
-experiments with LLMs can be and simplifying the process of getting started. It
-also aims to encourage exchange between behavioral science, neuroscience, and
-LLM research, so that insights from each can inform the others.
-
-The [companion repository](https://github.com/marishkamehta/llm-blog-repo) contains
-the code, worked demonstrations, source audits, and reviewed results for this
-series. Use its [blog-to-code guide](https://github.com/marishkamehta/llm-blog-repo/blob/main/docs/READING_MAP.md)
-to find the files for each article.
+The code lives in two repositories: [Silico](https://github.com/marishkamehta/silico)
+provides the tools for interacting with models, while
+[llm-behavior-experiments](https://github.com/marishkamehta/llm-behavior-experiments)
+contains the worked experiments, source audits, and reviewed results.
 
 ## What this series covers
 
-1. **[Quick Start Guide I: Hello LLM](/blog/2026/quick-start/)**
-2. **[Quick Start Guide II: A First Experiment with Silico](/blog/2026/first-experiment/)**
+1. **[Quick Start Guide: Hello LLM!](/blog/2026/quick-start/)**
+2. **[Testing the Decoy Effect in an LLM](/blog/2026/first-experiment/)**
 
 The experimental demonstrations on [belief bias](/blog/2026/belief-bias/) and
 [position bias](/blog/2026/position-bias/) are separate, standalone articles.
