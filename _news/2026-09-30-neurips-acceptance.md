@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Accepted: _When Old Rules Override New Decisions: Policy-State Revision in LLM Checkers_, with Don K. Dennis, at the NeurIPS 2026 Workshop on Interpreting Agent Behavior.
+Accepted: _When Old Rules Override New Decisions: Policy-State Revision in LLM Checkers_, with Don K. Dennis, at the <span class="update-highlight">NeurIPS 2026</span> Workshop on Interpreting Agent Behavior.

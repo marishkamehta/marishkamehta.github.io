@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Received a travel award to present my poster on cardiac interoception and affective symptom change at the [Computational Psychiatry Conference](https://www.cpconf.org/).
+Received a <span class="update-highlight">travel award</span> to present my poster on cardiac interoception and affective symptom change at the [Computational Psychiatry Conference](https://www.cpconf.org/).
