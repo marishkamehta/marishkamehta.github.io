@@ -24,7 +24,7 @@ latest_posts:
   enabled: false
 ---
 
-I am a PhD candidate in computational psychiatry at the [Laureate Institute for Brain Research](https://www.laureateinstitute.org/), advised by [Dr. Ryan Smith](https://www.laureateinstitute.org/ryan-smith.html). I expect to complete my PhD in **December 2026**.
+I am a PhD candidate in computational psychiatry at the [Laureate Institute for Brain Research](https://www.laureateinstitute.org/), advised by [Dr. Ryan Smith](https://www.laureateinstitute.org/ryan-smith.html). I expect to complete my PhD in **Spring 2027**.
 
 I use computational models to study cognition and behavior across mental health conditions. My research asks:
 
@@ -37,4 +37,4 @@ This interest in behavior also informs my experiments with large language models
 
 My approach draws on training in biomedical science at Queen Mary University of London, neuroscience through [Neurasmus](https://www.neurasmus.u-bordeaux.fr) at Bordeaux and Laval, and psychology at NYU. Before my PhD, I conducted my NYU thesis with [Dr. Laurel Morris](https://www.psy.ox.ac.uk/people/laurel-morris) at Mount Sinai, where I later worked as a Clinical Research Coordinator.
 
-<p class="job-market-callout">I am on the job market for industry and academic research positions starting January 2027.</p>
+<p class="job-market-callout">I am on the job market for industry and academic research positions starting Spring 2027.</p>
