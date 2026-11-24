@@ -37,4 +37,4 @@ This interest in behavior also informs my experiments with large language models
 
 My approach draws on training in biomedical science at Queen Mary University of London, neuroscience through [Neurasmus](https://www.neurasmus.u-bordeaux.fr) at Bordeaux and Laval, and psychology at NYU. Before my PhD, I conducted my NYU thesis with [Dr. Laurel Morris](https://www.psy.ox.ac.uk/people/laurel-morris) at Mount Sinai, where I later worked as a Clinical Research Coordinator.
 
-<p class="job-market-callout">I am on the job market for industry and academic research positions starting Spring 2027.</p>
+<p class="job-market-callout">I am on the job market for industry and academic research positions starting Spring 2027.<br>I'll be at NeurIPS in Sydney, presenting a poster at the IAB workshop. Get in touch if you'll be there!</p>
