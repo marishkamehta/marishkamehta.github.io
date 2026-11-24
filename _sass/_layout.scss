@@ -40,6 +40,28 @@ body.sticky-bottom-footer {
   }
 }
 
+.conference-banner {
+  clear: both;
+  margin: 1.5rem 0 1.75rem;
+  padding: 0.1875rem 0 0.1875rem 1.125rem;
+  border-left: 2px solid var(--job-market-border-color);
+  color: var(--global-text-color);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+}
+
 .job-market-callout {
   clear: both;
   margin: 1.5rem 0;

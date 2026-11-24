@@ -39,6 +39,11 @@ layout: default
     {% endif %}
 
     <div class="clearfix">{{ content }}</div>
+    {% if page.conference_banner %}
+      <aside class="conference-banner" aria-label="Conference announcement">
+        {{ page.conference_banner | markdownify }}
+      </aside>
+    {% endif %}
     <!-- Updates -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
